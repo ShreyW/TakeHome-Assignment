@@ -1,0 +1,8 @@
+{
+  "type": "Invoice",
+  "invoice_id": "UNKNOWN",
+  "study_id": "VTX-330-201",
+  "total_amount": 2940.6,
+  "text": "\nAtlas Research Partners TAX INVOICE\n\nClinical Research Billing Dept. No. INV-101\n\nDate: 2025-11-15\n\nES\n\nBill To\nProtocol\nService Date\n\nFor\n\nDescription\n\nIRB / Regulatory Submission\n\nVantix Biosciences\n\n \n\nASCEND (VTX-330-201)\n2025-11-15\nSite Cost\nQty Unit Price Amount\n1 $2,940.60 $2,940.60\nSubtotal $2,940.60\nAmount Due $2,940.60\n\nTerms: Net 45. Please remit to Atlas Research Partners\n\f\n",
+  "_source_file": "INV-101_irb-regulatory-submission_2025-11-15.pdf"
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "unbilled.json — work with evidence it happened but never invoiced",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["subject_id", "estimated_amount"],
+    "properties": {
+      "subject_id": {"type": "string"},
+      "proposed_visit_label": {"type": ["string", "null"]},
+      "estimated_amount": {"type": "number"},
+      "cta_basis": {"type": ["string", "null"]},
+      "evidence": {"type": ["string", "null"]},
+      "confidence": {"enum": ["HIGH", "MEDIUM", "LOW", null]}
+    }
+  }
+}

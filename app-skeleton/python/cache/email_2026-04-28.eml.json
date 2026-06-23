@@ -1,0 +1,5 @@
+{
+  "type": "Comm",
+  "text": "From: billing@atlasresearch.com\nTo: payments@vantixbio.com\nDate: 2026-04-28\nSubject: ASCEND VTX-330-201 \u2014 two autopays not received\n\nHi team \u2014 reconciling the eClinicalGPS autopay register against our bank feed, two visit autopays show as issued but never deposited: S-33-003 V3 (~$523, ~4/20) and S-33-004 V1 (~$419, ~3/2). Can you confirm status? Also S-33-003 Screening came through at $627.55 but the schedule is $685.40 \u2014 looks short by $57.85.\n",
+  "_source_file": "email_2026-04-28.eml"
+}

@@ -1,0 +1,14 @@
+{
+  "study": "study-01-horizon",
+  "note": "A small PUBLIC subset so you can check you're on track. The full hidden set is larger.",
+  "checks": [
+    {"kind": "invoice_status", "match_amount": 2153.13, "expect_status": "paid", "expect_settled": 1937.82,
+     "hint": "INV-002 is $2,153.13; the bank shows $1,937.82. That is the 10% CTA holdback — paid in full per terms, NOT underpaid."},
+    {"kind": "unpaid_present", "ref_type": "invoice", "amount": 13061.60,
+     "hint": "INV-105 (pharmacy maintenance, 4 years on one invoice) was sent but never paid — no remittance and no matching bank deposit. The status only resolves in the comms."},
+    {"kind": "unbilled_subject", "subject_id": "S-12-037",
+     "hint": "The RealTime CTMS visit log shows this screening visit (status Complete), but no site invoice was ever raised for it."},
+    {"kind": "dashboard_field", "field": "outstanding_ar", "value": 13061.60, "tol": 50,
+     "hint": "Only INV-105 is genuinely outstanding. Old invoices that settled via the bank are NOT outstanding."}
+  ]
+}

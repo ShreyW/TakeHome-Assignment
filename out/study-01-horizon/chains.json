@@ -1,0 +1,286 @@
+{
+  "study_id": "MRD-204-017",
+  "site_id": "ARP-12",
+  "investigator": "Elena Park",
+  "payment_to_remittance": [
+    {
+      "payment_id": "BT-002",
+      "remittance_ids": [
+        "LR-002"
+      ],
+      "notes": null
+    },
+    {
+      "payment_id": "BT-005",
+      "remittance_ids": [
+        "LR-005"
+      ],
+      "notes": null
+    },
+    {
+      "payment_id": "BT-001",
+      "remittance_ids": [
+        "LR-001"
+      ],
+      "notes": null
+    },
+    {
+      "payment_id": "BT-003",
+      "remittance_ids": [
+        "LR-003"
+      ],
+      "notes": null
+    },
+    {
+      "payment_id": "BT-011",
+      "remittance_ids": [
+        "LR-011"
+      ],
+      "notes": null
+    },
+    {
+      "payment_id": "BT-004",
+      "remittance_ids": [
+        "LR-004"
+      ],
+      "notes": null
+    },
+    {
+      "payment_id": "BT-010",
+      "remittance_ids": [
+        "LR-010"
+      ],
+      "notes": null
+    },
+    {
+      "payment_id": "BT-007",
+      "remittance_ids": [
+        "LR-007"
+      ],
+      "notes": null
+    },
+    {
+      "payment_id": "BT-006",
+      "remittance_ids": [
+        "LR-006"
+      ],
+      "notes": null
+    },
+    {
+      "payment_id": "BT-009",
+      "remittance_ids": [
+        "LR-009"
+      ],
+      "notes": null
+    },
+    {
+      "payment_id": "BT-008",
+      "remittance_ids": [
+        "LR-008"
+      ],
+      "notes": null
+    }
+  ],
+  "invoice_to_payment": [
+    {
+      "invoice_id": "INV-104",
+      "payment_ids": [
+        "BT-008"
+      ],
+      "invoice_amount": 1284.6,
+      "amount_settled": 1284.6,
+      "status": "paid",
+      "notes": null
+    },
+    {
+      "invoice_id": "INV-004",
+      "payment_ids": [],
+      "invoice_amount": 2983.75,
+      "amount_settled": 2685.375,
+      "status": "paid",
+      "notes": "bundled remittance"
+    },
+    {
+      "invoice_id": "INV-101",
+      "payment_ids": [],
+      "invoice_amount": 2438.9,
+      "amount_settled": 2195.01,
+      "status": "paid",
+      "notes": "bundled remittance"
+    },
+    {
+      "invoice_id": "INV-102",
+      "payment_ids": [
+        "BT-007"
+      ],
+      "invoice_amount": 11642.8,
+      "amount_settled": 11642.8,
+      "status": "paid",
+      "notes": null
+    },
+    {
+      "invoice_id": "INV-013",
+      "payment_ids": [],
+      "invoice_amount": 2983.75,
+      "amount_settled": 2685.375,
+      "status": "paid",
+      "notes": "bundled remittance"
+    },
+    {
+      "invoice_id": "INV-012",
+      "payment_ids": [
+        "BT-002"
+      ],
+      "invoice_amount": 2153.13,
+      "amount_settled": 1937.82,
+      "status": "paid",
+      "notes": "10.0% CTA holdback"
+    },
+    {
+      "invoice_id": "INV-D003",
+      "payment_ids": [],
+      "invoice_amount": 1373.75,
+      "amount_settled": 1236.375,
+      "status": "paid",
+      "notes": "bundled remittance"
+    },
+    {
+      "invoice_id": "INV-005",
+      "payment_ids": [
+        "BT-011"
+      ],
+      "invoice_amount": 2335.63,
+      "amount_settled": 2102.07,
+      "status": "paid",
+      "notes": "10.0% CTA holdback"
+    },
+    {
+      "invoice_id": "INV-015",
+      "payment_ids": [],
+      "invoice_amount": 756.25,
+      "amount_settled": 680.625,
+      "status": "paid",
+      "notes": "bundled remittance"
+    },
+    {
+      "invoice_id": "INV-100",
+      "payment_ids": [
+        "BT-005"
+      ],
+      "invoice_amount": 14317.5,
+      "amount_settled": 14317.5,
+      "status": "paid",
+      "notes": null
+    },
+    {
+      "invoice_id": "INV-017",
+      "payment_ids": [],
+      "invoice_amount": 2983.75,
+      "amount_settled": 2685.375,
+      "status": "paid",
+      "notes": "bundled remittance"
+    },
+    {
+      "invoice_id": "INV-003",
+      "payment_ids": [],
+      "invoice_amount": 830.63,
+      "amount_settled": 747.567,
+      "status": "paid",
+      "notes": "bundled remittance"
+    },
+    {
+      "invoice_id": "INV-D020",
+      "payment_ids": [
+        "BT-010"
+      ],
+      "invoice_amount": 308.34,
+      "amount_settled": 308.34,
+      "status": "paid",
+      "notes": null
+    },
+    {
+      "invoice_id": "INV-103",
+      "payment_ids": [],
+      "invoice_amount": 2569.2,
+      "amount_settled": 2312.2799999999997,
+      "status": "paid",
+      "notes": "bundled remittance"
+    },
+    {
+      "invoice_id": "INV-302",
+      "payment_ids": [],
+      "invoice_amount": 3382.4,
+      "amount_settled": 3044.1600000000003,
+      "status": "paid",
+      "notes": "bundled remittance"
+    },
+    {
+      "invoice_id": "INV-010",
+      "payment_ids": [],
+      "invoice_amount": 2983.75,
+      "amount_settled": 2685.375,
+      "status": "paid",
+      "notes": "bundled remittance"
+    },
+    {
+      "invoice_id": "INV-014",
+      "payment_ids": [],
+      "invoice_amount": 463.75,
+      "amount_settled": 417.375,
+      "status": "paid",
+      "notes": "bundled remittance"
+    },
+    {
+      "invoice_id": "INV-001",
+      "payment_ids": [],
+      "invoice_amount": 2983.75,
+      "amount_settled": 2685.375,
+      "status": "paid",
+      "notes": "bundled remittance"
+    },
+    {
+      "invoice_id": "INV-303",
+      "payment_ids": [],
+      "invoice_amount": 16134.8,
+      "amount_settled": 14521.32,
+      "status": "paid",
+      "notes": "bundled remittance"
+    },
+    {
+      "invoice_id": "INV-002",
+      "payment_ids": [],
+      "invoice_amount": 2153.13,
+      "amount_settled": 1937.8170000000002,
+      "status": "paid",
+      "notes": "bundled remittance"
+    },
+    {
+      "invoice_id": "INV-021",
+      "payment_ids": [],
+      "invoice_amount": 2335.63,
+      "amount_settled": 2102.067,
+      "status": "paid",
+      "notes": "bundled remittance"
+    },
+    {
+      "invoice_id": "INV-018",
+      "payment_ids": [],
+      "invoice_amount": 2983.75,
+      "amount_settled": 2685.375,
+      "status": "paid",
+      "notes": "bundled remittance"
+    },
+    {
+      "invoice_id": "INV-009",
+      "payment_ids": [],
+      "invoice_amount": 2983.75,
+      "amount_settled": 2685.375,
+      "status": "paid",
+      "notes": "bundled remittance"
+    }
+  ],
+  "invoice_to_activities": [],
+  "remittance_to_activities": [],
+  "activity_to_cta": [],
+  "entity_scope": []
+}

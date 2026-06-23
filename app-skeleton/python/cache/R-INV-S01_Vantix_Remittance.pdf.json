@@ -1,0 +1,6 @@
+{
+  "type": "Remittance",
+  "total_paid": 0.0,
+  "text": "Vantix Biosciences\n Payment Notification\nRemittance\nR-INV-S01\nPaid on\n2025-12-30\nVia\nACH\nTotal remitted\n$10,842.50\nInvoice\nAmount Paid\nINV-100\n$10,842.50\n\n",
+  "_source_file": "R-INV-S01_Vantix_Remittance.pdf"
+}

@@ -1,0 +1,6 @@
+{
+  "type": "Remittance",
+  "total_paid": 11642.8,
+  "text": "\u25a0 LEDGER RUN\n Remittance Advice\nReference\nLR-007\nPayment date\n2023-10-05\nPayor\nMeridian Therapeutics\nMethod\nACH\nNet paid\n$11,642.80\nInvoice\nSubject\nGross\nAdjustment\nPaid\nINV-102\nsite\n$11,642.80\n$11,642.80\nTotal\n$11,642.80\n\n",
+  "_source_file": "R-007_Ledger_Run.pdf"
+}

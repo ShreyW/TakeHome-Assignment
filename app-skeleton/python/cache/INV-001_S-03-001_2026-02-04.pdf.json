@@ -1,0 +1,8 @@
+{
+  "type": "Invoice",
+  "invoice_id": "INV-001",
+  "study_id": "CLX-115-300",
+  "total_amount": 742.3,
+  "text": "\na I\n\nStatement of Charges\n\nProvider Atlas Research Partners (ARP-03)\n\nPayer Calyx Pharma\n\nStudy / Protocol NORTHSTAR (CLX-115-300)\n\nReference # INV-001\n\nInvoice date 2026-02-10\n\nService date 2026-02-04\n\nRe Subject S-03-001\nItem Charge\nScreening Visit $742.30\n\nBalance Due $742.30\n\nNet 30. Remit to Atlas Research Partners.\n\f\n",
+  "_source_file": "INV-001_S-03-001_2026-02-04.pdf"
+}

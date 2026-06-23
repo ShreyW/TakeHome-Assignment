@@ -1,0 +1,10 @@
+[
+  {
+    "subject_id": "S-03-002",
+    "evidence": "Clinical Conductor shows Visit 2 never invoiced",
+    "proposed_visit_label": "Visit 2",
+    "estimated_amount": 1000.0,
+    "cta_basis": "Visit 2 base",
+    "confidence": "HIGH"
+  }
+]

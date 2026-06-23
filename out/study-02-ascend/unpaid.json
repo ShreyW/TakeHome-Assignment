@@ -1,0 +1,20 @@
+[
+  {
+    "ref_type": "autopay",
+    "ref_id": "AP-009",
+    "amount_expected": 523.1,
+    "age_days": 60,
+    "reason": "autopay_no_deposit",
+    "evidence": "never deposited",
+    "confidence": "HIGH"
+  },
+  {
+    "ref_type": "autopay",
+    "ref_id": "AP-011",
+    "amount_expected": 418.75,
+    "age_days": 60,
+    "reason": "autopay_no_deposit",
+    "evidence": "never deposited",
+    "confidence": "HIGH"
+  }
+]

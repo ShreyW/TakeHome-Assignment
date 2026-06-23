@@ -1,0 +1,32 @@
+# Optional scaffolding. You do NOT have to use this — SQLite, flat files, or any stack is fine.
+# It gives you a Postgres to use as a store and runs a hello-world service so you can start on the
+# problem, not the plumbing. Switch `build:` to the language you want.
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_PASSWORD: recon
+      POSTGRES_DB: recon
+    ports: ["5432:5432"]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  app:
+    # Pick ONE — point this at the skeleton for your language, or replace with your own Dockerfile:
+    build: ./app-skeleton/python
+    # build: ./app-skeleton/node
+    # build: ./app-skeleton/go
+    environment:
+      DATA_DIR: /documents
+      OUT_DIR: /out
+      DATABASE_URL: postgres://postgres:recon@db:5432/recon
+    volumes:
+      - ./documents:/documents:ro   # the one flat pile of documents (read-only)
+      - ./out:/out                  # write your four canonical answer files here
+    ports: ["8080:8080"]
+    depends_on:
+      db:
+        condition: service_healthy

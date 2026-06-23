@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "unpaid.json — invoices/autopays issued or expected but never collected",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["ref_type", "ref_id", "amount_expected", "reason"],
+    "properties": {
+      "ref_type": {"enum": ["invoice", "autopay"]},
+      "ref_id": {"type": "string"},
+      "amount_expected": {"type": "number"},
+      "age_days": {"type": ["integer", "null"]},
+      "reason": {"enum": ["sent_not_paid", "autopay_no_deposit"]},
+      "evidence": {"type": ["string", "null"]},
+      "confidence": {"enum": ["HIGH", "MEDIUM", "LOW", null]}
+    }
+  }
+}

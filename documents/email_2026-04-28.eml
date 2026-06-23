@@ -1,0 +1,6 @@
+From: billing@atlasresearch.com
+To: payments@vantixbio.com
+Date: 2026-04-28
+Subject: ASCEND VTX-330-201 — two autopays not received
+
+Hi team — reconciling the eClinicalGPS autopay register against our bank feed, two visit autopays show as issued but never deposited: S-33-003 V3 (~$523, ~4/20) and S-33-004 V1 (~$419, ~3/2). Can you confirm status? Also S-33-003 Screening came through at $627.55 but the schedule is $685.40 — looks short by $57.85.

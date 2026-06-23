@@ -1,0 +1,8 @@
+{
+  "type": "Invoice",
+  "invoice_id": "INV-003",
+  "study_id": "MRD-204-017",
+  "total_amount": 830.63,
+  "text": "INVOICE\n Atlas Research Partners (ARP-12)  \u2192  Meridian Therapeutics, Inc.\nStudy: HORIZON (MRD-204-017)\nInvoice #\nINV-003\nInvoice date\n2022-07-10\nService date\n2022-05-21\nBill to\nCordis Clinical\nFor\nSubject S-12-003\nDescription\nAmount\nUltrasound Visit \u2014 procedures\n$664.50\nOverhead @ 25%\n$166.13\nTOTAL DUE\n$830.63\nRemit to Atlas Research Partners. Terms: Net 30.\n\n",
+  "_source_file": "INV-003_S-12-003_2022-05-21.pdf"
+}

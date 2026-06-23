@@ -1,0 +1,8 @@
+{
+  "type": "Invoice",
+  "invoice_id": "INV-105",
+  "study_id": "MRD-204-017",
+  "total_amount": 13061.6,
+  "text": "\nINVOICE\n\nAtlas Research Partners (ARP-12) \u2014 Meridian Therapeutics, Inc.\nStudy: HORIZON (MRD-204-017)\n\nInvoice # INV-105\n\nInvoice date 2026-02-06\n\nService date 2023-01-01\n\nBill to Cordis Clinical\n\nFor Site Cost\nDescription Amount\nPharmacy Annual Maintenance 2023-2026 (4 x $3,265.40) $13,061.60\nTOTAL DUE $13,061.60\n\nRemit to Atlas Research Partners. Terms: Net 30.\n\f\n",
+  "_source_file": "INV-105_pharmacy-annual-maintenance_2026-02-06.pdf"
+}

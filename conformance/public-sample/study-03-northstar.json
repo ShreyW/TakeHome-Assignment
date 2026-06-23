@@ -1,0 +1,10 @@
+{
+  "study": "study-03-northstar",
+  "note": "A small PUBLIC subset so you can check you're on track. The full hidden set is larger.",
+  "checks": [
+    {"kind": "unbilled_subject", "subject_id": "S-03-002",
+     "hint": "Clinical Conductor shows a Visit 2 that was never invoiced."},
+    {"kind": "dashboard_field", "field": "total_collected", "value": 8806.30, "tol": 50,
+     "hint": "Everything billed was collected via Ramp. Watch for a Meridian invoice misfiled in this study's folder — it is NOT NORTHSTAR's."}
+  ]
+}

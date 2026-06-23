@@ -1,0 +1,8 @@
+{
+  "type": "Invoice",
+  "invoice_id": "UNKNOWN",
+  "study_id": "VTX-330-201",
+  "total_amount": 10842.5,
+  "text": "Atlas Research Partners\n TAX INVOICE\n Clinical Research Billing Dept.\n No. INV-100\nDate: 2025-11-15\n \nBill To\nVantix Biosciences\nProtocol\nASCEND (VTX-330-201)\nService Date\n2025-11-15\nFor\nSite Cost\nDescription\nQty\nUnit Price\nAmount\nSite Initiation / Start-up\n1\n$10,842.50\n$10,842.50\nSubtotal\n$10,842.50\nAmount Due\n$10,842.50\nTerms: Net 45. Please remit to Atlas Research Partners.\n\n",
+  "_source_file": "INV-100_site-initiation-start_2025-11-15.pdf"
+}

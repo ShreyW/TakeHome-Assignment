@@ -1,0 +1,69 @@
+{
+  "study_id": "CLX-115-300",
+  "site_id": "ARP-12",
+  "investigator": "Dana Whitfield",
+  "payment_to_remittance": [
+    {
+      "payment_id": "BT-N00",
+      "remittance_ids": [
+        "RAMP-N00"
+      ],
+      "notes": null
+    },
+    {
+      "payment_id": "BT-N01",
+      "remittance_ids": [
+        "RAMP-N01"
+      ],
+      "notes": null
+    }
+  ],
+  "invoice_to_payment": [
+    {
+      "invoice_id": "INV-100",
+      "payment_ids": [
+        "BT-N00"
+      ],
+      "invoice_amount": 6284.5,
+      "amount_settled": 6284.5,
+      "status": "paid",
+      "notes": null
+    },
+    {
+      "invoice_id": "INV-004",
+      "payment_ids": [],
+      "invoice_amount": 518.6,
+      "amount_settled": 518.6,
+      "status": "paid",
+      "notes": "bundled remittance"
+    },
+    {
+      "invoice_id": "INV-003",
+      "payment_ids": [],
+      "invoice_amount": 742.3,
+      "amount_settled": 742.3,
+      "status": "paid",
+      "notes": "bundled remittance"
+    },
+    {
+      "invoice_id": "INV-001",
+      "payment_ids": [],
+      "invoice_amount": 742.3,
+      "amount_settled": 742.3,
+      "status": "paid",
+      "notes": "bundled remittance"
+    },
+    {
+      "invoice_id": "INV-002",
+      "payment_ids": [],
+      "invoice_amount": 518.6,
+      "amount_settled": 518.6,
+      "status": "paid",
+      "notes": "bundled remittance"
+    }
+  ],
+  "invoice_to_activities": [],
+  "remittance_to_activities": [],
+  "activity_to_cta": [],
+  "entity_scope": []
+}

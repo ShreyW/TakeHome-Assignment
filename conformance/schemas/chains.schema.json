@@ -1,0 +1,61 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "chains.json — the six reconciliation match-chains",
+  "type": "object",
+  "required": ["study_id", "payment_to_remittance", "invoice_to_payment",
+               "invoice_to_activities", "remittance_to_activities", "activity_to_cta", "entity_scope"],
+  "properties": {
+    "study_id": {"type": "string"},
+    "site_id": {"type": ["string", "null"]},
+    "investigator": {"type": ["string", "null"]},
+    "payment_to_remittance": {
+      "type": "array",
+      "items": {"type": "object", "required": ["payment_id", "remittance_ids"],
+                "properties": {"payment_id": {"type": "string"},
+                               "remittance_ids": {"type": "array", "items": {"type": "string"}}}}
+    },
+    "invoice_to_payment": {
+      "type": "array",
+      "items": {"type": "object",
+                "required": ["invoice_id", "payment_ids", "invoice_amount", "amount_settled", "status"],
+                "properties": {"invoice_id": {"type": "string"},
+                               "payment_ids": {"type": "array", "items": {"type": "string"}},
+                               "invoice_amount": {"type": "number"},
+                               "amount_settled": {"type": "number"},
+                               "status": {"enum": ["paid", "partial", "unpaid"]}}}
+    },
+    "invoice_to_activities": {
+      "type": "array",
+      "items": {"type": "object", "required": ["invoice_id", "activity_ids"],
+                "properties": {"invoice_id": {"type": "string"},
+                               "activity_ids": {"type": "array", "items": {"type": "string"}}}}
+    },
+    "remittance_to_activities": {
+      "type": "array",
+      "items": {"type": "object", "required": ["remittance_id", "lines"],
+                "properties": {"remittance_id": {"type": "string"},
+                               "lines": {"type": "array", "items": {
+                                 "type": "object", "required": ["amount_allocated"],
+                                 "properties": {"activity_id": {"type": ["string", "null"]},
+                                                "invoice_id": {"type": ["string", "null"]},
+                                                "amount_allocated": {"type": "number"}}}}}}
+    },
+    "activity_to_cta": {
+      "type": "array",
+      "items": {"type": "object", "required": ["activity_id", "cta_amount"],
+                "properties": {"activity_id": {"type": "string"},
+                               "cta_visit_label": {"type": ["string", "null"]},
+                               "cta_amount": {"type": ["number", "null"]},
+                               "match_confidence": {"enum": ["HIGH", "MEDIUM", "LOW", null]}}}
+    },
+    "entity_scope": {
+      "type": "array",
+      "items": {"type": "object", "required": ["entity_type", "entity_id", "study_id"],
+                "properties": {"entity_type": {"enum": ["invoice", "payment", "remittance", "activity"]},
+                               "entity_id": {"type": "string"},
+                               "study_id": {"type": "string"},
+                               "site_id": {"type": ["string", "null"]},
+                               "investigator": {"type": ["string", "null"]}}}
+    }
+  }
+}

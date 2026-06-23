@@ -1,0 +1,68 @@
+date,name,amount,iso_currency_code,category,account_id,transaction_id
+2022-05-02,ADP PAYROLL,-28450.00,USD,Payroll,acct_arp_operating_0001,PL-X001
+2022-06-01,WESTGATE PROPERTIES LLC RENT,-9200.00,USD,Rent,acct_arp_operating_0001,PL-X002
+2022-06-01,ADP PAYROLL,-28910.00,USD,Payroll,acct_arp_operating_0001,PL-X003
+2022-06-15,QUEST DIAGNOSTICS LAB SUPPLIES,-1840.55,USD,Medical Supplies,acct_arp_operating_0001,PL-X004
+2022-07-01,ADP PAYROLL,-29010.00,USD,Payroll,acct_arp_operating_0001,PL-X005
+2022-07-05,Meridian Therapeutics,1937.82,USD,"Transfer, Deposit",acct_arp_operating_0001,BT-002
+2022-07-12,AMAZON.COM PURCHASE,-312.49,USD,Office,acct_arp_operating_0001,PL-X006
+2022-07-31,MONTHLY SERVICE FEE,-45.00,USD,Bank Fees,acct_arp_operating_0001,PL-X007
+2022-08-03,ABBVIE INC ACH CREDIT,6820.00,USD,"Transfer, Deposit",acct_arp_operating_0001,PL-X008
+2022-08-15,Meridian Therapeutics,14317.50,USD,"Transfer, Deposit",acct_arp_operating_0001,BT-005
+2022-08-20,MCKESSON MEDICAL SURGICAL,-2210.33,USD,Medical Supplies,acct_arp_operating_0001,PL-X009
+2022-09-01,ADP PAYROLL,-30150.00,USD,Payroll,acct_arp_operating_0001,PL-X010
+2022-09-15,AT&T BUSINESS FIBER,-489.99,USD,Utilities,acct_arp_operating_0001,PL-X011
+2022-09-29,Meridian Therapeutics,7354.69,USD,"Transfer, Deposit",acct_arp_operating_0001,BT-001
+2022-10-05,WCG IRB ACH DEBIT,-3500.00,USD,Professional Fees,acct_arp_operating_0001,PL-X012
+2022-10-27,Meridian Therapeutics,9410.63,USD,"Transfer, Deposit",acct_arp_operating_0001,BT-003
+2022-10-31,INTEREST PAYMENT,18.22,USD,Interest,acct_arp_operating_0001,PL-X013
+2022-11-01,ADP PAYROLL,-30420.00,USD,Payroll,acct_arp_operating_0001,PL-X014
+2022-11-02,WESTBRIDGE BANK,850.00,USD,Transfer,acct_arp_operating_0001,BT-N3
+2022-12-01,TRANSFER TO SAVINGS XXXX8842,-15000.00,USD,Transfer,acct_arp_operating_0001,PL-X015
+2022-12-05,Meridian Therapeutics,2102.07,USD,"Transfer, Deposit",acct_arp_operating_0001,BT-011
+2023-01-09,IRS USATAXPYMT,-8740.00,USD,Tax,acct_arp_operating_0001,PL-X016
+2023-01-12,Meridian Therapeutics,9154.12,USD,"Transfer, Deposit",acct_arp_operating_0001,BT-004
+2023-02-01,ADP PAYROLL,-31200.00,USD,Payroll,acct_arp_operating_0001,PL-X017
+2023-03-14,FISHER SCIENTIFIC,-1675.20,USD,Medical Supplies,acct_arp_operating_0001,PL-X018
+2023-04-03,PFIZER CLINICAL OPS ACH CREDIT,11250.00,USD,"Transfer, Deposit",acct_arp_operating_0001,PL-X019
+2023-05-12,Meridian Therapeutics,308.34,USD,"Transfer, Deposit",acct_arp_operating_0001,BT-010
+2023-05-22,MICROSOFT 365 BUSINESS,-180.00,USD,Software,acct_arp_operating_0001,PL-X020
+2023-06-30,Calyx Pharma,4200.00,USD,"Transfer, Deposit",acct_arp_operating_0001,BT-N2
+2023-06-30,OUTGOING WIRE FEE,-25.00,USD,Bank Fees,acct_arp_operating_0001,PL-X021
+2023-08-11,UBER TRIP,-64.30,USD,Travel,acct_arp_operating_0001,PL-X022
+2023-09-01,ADP PAYROLL,-32010.00,USD,Payroll,acct_arp_operating_0001,PL-X023
+2023-10-05,Meridian Therapeutics,11642.80,USD,"Transfer, Deposit",acct_arp_operating_0001,BT-007
+2023-11-15,STAPLES STORE 1042,-228.71,USD,Office,acct_arp_operating_0001,PL-X024
+2024-01-31,INTEREST PAYMENT,22.07,USD,Interest,acct_arp_operating_0001,PL-X025
+2024-03-01,WESTGATE PROPERTIES LLC RENT,-9600.00,USD,Rent,acct_arp_operating_0001,PL-X026
+2024-05-09,IQVIA INC ACH CREDIT,4400.00,USD,"Transfer, Deposit",acct_arp_operating_0001,PL-X027
+2024-07-18,AWS CLOUD SERVICES,-742.88,USD,Software,acct_arp_operating_0001,PL-X028
+2024-10-02,DELTA AIR LINES,-512.40,USD,Travel,acct_arp_operating_0001,PL-X029
+2024-10-18,Meridian Therapeutics,5008.10,USD,"Transfer, Deposit",acct_arp_operating_0001,BT-006
+2025-01-15,MALPRACTICE INSURANCE PREMIUM,-6200.00,USD,Insurance,acct_arp_operating_0001,PL-X030
+2025-03-20,GENENTECH USA ACH CREDIT,9075.00,USD,"Transfer, Deposit",acct_arp_operating_0001,PL-X031
+2025-06-01,ADP PAYROLL,-34550.00,USD,Payroll,acct_arp_operating_0001,PL-X032
+2025-09-09,RETURNED ITEM REVERSAL,-1500.00,USD,Adjustment,acct_arp_operating_0001,PL-X033
+2025-11-30,MONTHLY SERVICE FEE,-45.00,USD,Bank Fees,acct_arp_operating_0001,PL-X034
+2025-12-12,Meridian Therapeutics,19517.20,USD,"Transfer, Deposit",acct_arp_operating_0001,BT-009
+2025-12-30,VANTIX BIOSCIENCES,10842.50,USD,"Transfer, Deposit",acct_arp_operating_0001,PL-901
+2025-12-30,VANTIX BIOSCIENCES,2940.60,USD,"Transfer, Deposit",acct_arp_operating_0001,PL-902
+2026-01-12,CITY OF TAMPA UTILITIES,-377.14,USD,Utilities,acct_arp_operating_0001,PL-X035
+2026-01-15,VANTIX BIOSCIENCES,685.40,USD,"Transfer, Deposit",acct_arp_operating_0001,PL-001
+2026-01-15,STARBUCKS #2241,-42.17,USD,Food and Drink,acct_arp_operating_0001,PL-N1
+2026-01-15,VANTIX BIOSCIENCES,685.40,USD,"Transfer, Deposit",acct_arp_operating_0001,PL-N2
+2026-01-20,CALYX PHARMA,6284.50,USD,"Transfer, Deposit",acct_arp_operating_0001,BT-N00
+2026-01-23,VANTIX BIOSCIENCES,685.40,USD,"Transfer, Deposit",acct_arp_operating_0001,PL-004
+2026-01-29,VANTIX BIOSCIENCES,627.55,USD,"Transfer, Deposit",acct_arp_operating_0001,PL-006
+2026-02-05,VANTIX BIOSCIENCES,685.40,USD,"Transfer, Deposit",acct_arp_operating_0001,PL-010
+2026-02-12,VANTIX BIOSCIENCES,418.75,USD,"Transfer, Deposit",acct_arp_operating_0001,PL-002
+2026-02-13,VANTIX BIOSCIENCES,685.40,USD,"Transfer, Deposit",acct_arp_operating_0001,PL-012
+2026-02-20,VANTIX BIOSCIENCES,418.75,USD,"Transfer, Deposit",acct_arp_operating_0001,PL-005
+2026-02-24,Meridian Therapeutics,1284.60,USD,"Transfer, Deposit",acct_arp_operating_0001,BT-008
+2026-02-26,VANTIX BIOSCIENCES,418.75,USD,"Transfer, Deposit",acct_arp_operating_0001,PL-007
+2026-02-28,BOX.COM SUBSCRIPTION,-240.00,USD,Software,acct_arp_operating_0001,PL-X036
+2026-03-12,VANTIX BIOSCIENCES,842.60,USD,"Transfer, Deposit",acct_arp_operating_0001,PL-003
+2026-03-26,VANTIX BIOSCIENCES,842.60,USD,"Transfer, Deposit",acct_arp_operating_0001,PL-008
+2026-03-31,OFFICE DEPOT,1200.00,USD,"Transfer, Deposit",acct_arp_operating_0001,PL-N3
+2026-04-05,RAMP / CALYX PHARMA,2521.80,USD,"Transfer, Deposit",acct_arp_operating_0001,BT-N01
+2026-04-15,ADP PAYROLL,-35900.00,USD,Payroll,acct_arp_operating_0001,PL-X037

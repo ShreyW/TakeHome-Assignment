@@ -1,0 +1,12 @@
+PostedDate,Reference,Payor,Method,Amount,Status
+2022-07-05,LR-002,Meridian Therapeutics,ACH,1937.82,Posted
+2022-08-15,LR-005,Meridian Therapeutics,CHECK,14317.50,Posted
+2022-09-29,LR-001,Meridian Therapeutics,ACH,7354.69,Posted
+2022-10-27,LR-003,Meridian Therapeutics,ACH,9410.63,Posted
+2022-12-05,LR-011,Meridian Therapeutics,ACH,2102.07,Posted
+2023-01-12,LR-004,Meridian Therapeutics,ACH,9154.12,Posted
+2023-05-12,LR-010,Meridian Therapeutics,ACH,308.34,Posted
+2023-10-05,LR-007,Meridian Therapeutics,ACH,11642.80,Posted
+2024-10-18,LR-006,Meridian Therapeutics,ACH,5008.10,Posted
+2025-12-12,LR-009,Meridian Therapeutics,WIRE,19517.20,Posted
+2026-02-24,LR-008,Meridian Therapeutics,ACH,1284.60,Posted

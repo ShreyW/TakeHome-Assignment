@@ -1,0 +1,10 @@
+[
+  {
+    "subject_id": "S-12-037",
+    "evidence": "RealTime CTMS visit log shows visit completed, no invoice",
+    "proposed_visit_label": "Screening Visit (incl. Ultrasound)",
+    "estimated_amount": 3814.38,
+    "cta_basis": "Procedure-level + 25% overhead",
+    "confidence": "HIGH"
+  }
+]

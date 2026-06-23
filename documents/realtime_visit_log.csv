@@ -1,0 +1,23 @@
+SubjectID,VisitName,VisitDate,SiteNumber,VisitStatus
+S-12-001,Screening Visit (incl. Ultrasound),2022-05-07,ARP-12,Complete
+S-12-002,Screening Visit,2022-05-11,ARP-12,Complete
+S-12-003,Ultrasound Visit,2022-05-21,ARP-12,Complete
+S-12-003,DXA Scan,2022-06-25,ARP-12,Complete
+S-12-004,Screening Visit (incl. Ultrasound),2022-05-24,ARP-12,Complete
+S-12-005,Imaging Visit,2022-06-07,ARP-12,Complete
+S-12-009,Screening Visit (incl. Ultrasound),2022-06-17,ARP-12,Complete
+S-12-010,Screening Visit (incl. Ultrasound),2022-06-17,ARP-12,Complete
+S-12-012,Screening Visit,2022-07-07,ARP-12,Complete
+S-12-013,Screening Visit (incl. Ultrasound),2022-07-07,ARP-12,Complete
+S-12-013,Unscheduled Lab Draw,2022-09-20,ARP-12,Complete
+S-12-013,Unscheduled Visit,2022-10-13,ARP-12,Complete
+S-12-017,Screening Visit (incl. Ultrasound),2022-09-14,ARP-12,Complete
+S-12-018,Screening Visit (incl. Ultrasound),2022-09-20,ARP-12,Complete
+S-12-021,Imaging Visit,2022-08-30,ARP-12,Complete
+S-12-037,Screening Visit (incl. Ultrasound),2023-01-25,ARP-12,Complete
+S-12-039,Screening Visit (incl. Ultrasound),2023-02-01,ARP-12,Complete
+S-12-040,Screening Visit (incl. Ultrasound),2023-02-03,ARP-12,Complete
+S-12-040,DXA Scan,2023-02-20,ARP-12,Complete
+S-12-041,Screening Visit (incl. Ultrasound),2023-02-02,ARP-12,Complete
+S-12-042,Screening Visit,2023-02-08,ARP-12,Complete
+S-12-043,Screening Visit,2023-02-09,ARP-12,Complete

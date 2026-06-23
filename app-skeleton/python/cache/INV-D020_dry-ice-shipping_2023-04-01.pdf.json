@@ -1,0 +1,8 @@
+{
+  "type": "Invoice",
+  "invoice_id": "INV-D020",
+  "study_id": "MRD-204-017",
+  "total_amount": 308.34,
+  "text": "\nINVOICE\n\nAtlas Research Partners (ARP-12) \u2014 Meridian Therapeutics, Inc.\nStudy: HORIZON (MRD-204-017)\n\nInvoice # INV-D020\n\nInvoice date 2023-04-01\n\nService date 2022-05-25\n\nBill to Cordis Clinical\n\nFor Site Cost\nDescription Amount\nDry Ice Shipping (35 deliveries) $308.34\nTOTAL DUE $308.34\n\nRemit to Atlas Research Partners. Terms: Net 30.\n\f\n",
+  "_source_file": "INV-D020_dry-ice-shipping_2023-04-01.pdf"
+}

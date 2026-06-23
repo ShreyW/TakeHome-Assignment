@@ -1,0 +1,14 @@
+{
+  "study": "study-02-ascend",
+  "note": "A small PUBLIC subset so you can check you're on track. The full hidden set is larger.",
+  "checks": [
+    {"kind": "unpaid_present", "ref_type": "autopay", "amount": 523.10,
+     "hint": "An autopay shows in the eClinicalGPS register as authorized but never lands in the Plaid feed. That is an unpaid autopay."},
+    {"kind": "unpaid_present", "ref_type": "autopay", "amount": 418.75,
+     "hint": "A second authorized autopay never deposited."},
+    {"kind": "exception_count_min", "value": 1,
+     "hint": "One autopay deposited at $627.55 against a scheduled $685.40 — that is an exception (wrong amount), NOT an unpaid item."},
+    {"kind": "dashboard_field", "field": "total_billed", "value": 21093.40, "tol": 50,
+     "hint": "Per-visit autopays are billed through the portal even though no site invoice exists; the two site fees are invoiced."}
+  ]
+}

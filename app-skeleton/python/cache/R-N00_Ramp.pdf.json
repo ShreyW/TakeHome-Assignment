@@ -1,0 +1,6 @@
+{
+  "type": "Remittance",
+  "total_paid": 6284.5,
+  "text": "ramp\n Bill Pay  \u00b7  Payment Confirmation\nFrom  Calyx Pharma     Paid to  Atlas Research Partners\nAmount  $6,284.50    Date  2026-01-20    Method  ACH\nConfirmation  RMP-N00\nInvoice\nAmount\nINV-100\n$6,284.50\nTotal\n$6,284.50\n\n",
+  "_source_file": "R-N00_Ramp.pdf"
+}

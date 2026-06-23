@@ -1,0 +1,13 @@
+AutopayID,SubjectID,Visit,ServiceDate,ScheduledAmount,Status
+AP-001,S-33-001,Screening,2026-01-12,685.40,Authorized
+AP-002,S-33-001,V1,2026-02-09,418.75,Authorized
+AP-003,S-33-001,V2,2026-03-09,842.60,Authorized
+AP-004,S-33-002,Screening,2026-01-20,685.40,Authorized
+AP-005,S-33-002,V1,2026-02-17,418.75,Authorized
+AP-006,S-33-003,Screening,2026-01-26,685.40,Authorized
+AP-007,S-33-003,V1,2026-02-23,418.75,Authorized
+AP-008,S-33-003,V2,2026-03-23,842.60,Authorized
+AP-009,S-33-003,V3,2026-04-20,523.10,Authorized
+AP-010,S-33-004,Screening,2026-02-02,685.40,Authorized
+AP-011,S-33-004,V1,2026-03-02,418.75,Authorized
+AP-012,S-33-005,Screening,2026-02-10,685.40,Authorized

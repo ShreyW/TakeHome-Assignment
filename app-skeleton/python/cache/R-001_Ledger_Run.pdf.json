@@ -1,0 +1,6 @@
+{
+  "type": "Remittance",
+  "total_paid": 7354.69,
+  "text": "\u25a0 LEDGER RUN\n Remittance Advice\nReference\nLR-001\nPayment date\n2022-09-29\nPayor\nMeridian Therapeutics\nMethod\nACH\nNet paid\n$7,354.69\nInvoice\nSubject\nGross\nAdjustment\nPaid\nINV-001\nS-12-001\n$2,983.75\n-$298.37 hold\n$2,685.38\nINV-003\nS-12-003\n$830.63\n-$83.06 hold\n$747.57\nINV-D003\nS-12-003\n$1,373.75\n-$137.37 hold\n$1,236.38\nINV-004\nS-12-004\n$2,983.75\n-$298.37 hold\n$2,685.38\nTotal\n$7,354.69\n\n",
+  "_source_file": "R-001_Ledger_Run.pdf"
+}

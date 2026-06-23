@@ -1,0 +1,10 @@
+{
+  "name": "reconciliation-service-skeleton",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Skeleton for the SWE reconciliation take-home (Node stdlib only).",
+  "scripts": {
+    "start": "node server.js",
+    "reconcile": "node server.js --reconcile"
+  }
+}
