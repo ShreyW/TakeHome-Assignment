@@ -2,7 +2,19 @@
   "type": "Invoice",
   "invoice_id": "INV-021",
   "study_id": "VTX-330-201",
+  "site_id": "ARP-12",
+  "investigator": null,
+  "date": "2022-09-12",
   "total_amount": 2335.63,
-  "text": "INVOICE\n Atlas Research Partners (ARP-12)  \u2192  Meridian Therapeutics, Inc.\nStudy: ASCEND (VTX-330-201)\nInvoice #\nINV-021\nInvoice date\n2022-09-12\nService date\n2022-08-30\nBill to\nCordis Clinical\nFor\nSubject S-12-021\nDescription\nAmount\nImaging Visit \u2014 procedures\n$1,868.50\nOverhead @ 25%\n$467.13\nTOTAL DUE\n$2,335.63\nRemit to Atlas Research Partners. Terms: Net 30.\n\n",
+  "line_items": [
+    {
+      "description": "Imaging Visit — procedures",
+      "amount": 1868.5
+    },
+    {
+      "description": "Overhead @ 25%",
+      "amount": 467.13
+    }
+  ],
   "_source_file": "INV-021_S-12-021_2022-08-30.pdf"
 }

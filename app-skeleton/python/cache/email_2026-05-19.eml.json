@@ -1,5 +1,12 @@
 {
   "type": "Comm",
-  "text": "From: Antony Lovrich <ap@cordisclinical.com>\nTo: billing@atlasresearch.com\nDate: 2026-05-19\nSubject: RE: MRD-204-017 Pharmacy Maintenance INV-105\n\nHi team, regarding the $13,061.60 pharmacy maintenance invoice covering 2023-2026: the sponsor will not authorize partial payment and is reviewing whether the 2023 and 2024 years are within the budget period. No payment will be released until that review closes. Please do not re-bill in the meantime.\n",
+  "date": "2026-05-19",
+  "content_summary": "Pharmacy maintenance invoice review",
+  "mentions_invoices": [
+    "INV-105"
+  ],
+  "status_update": "on hold",
+  "study_id": "MRD-204-017",
+  "site_id": null,
   "_source_file": "email_2026-05-19.eml"
 }

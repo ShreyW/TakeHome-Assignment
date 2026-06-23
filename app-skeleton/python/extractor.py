@@ -7,20 +7,8 @@ from io import BytesIO
 from pdf2image import convert_from_path
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from openai import OpenAI
+from dotenv import load_dotenv
 
-# Read OpenRouter API key from .env
-env_key = None
-if os.path.exists("../../.env"):
-    with open("../../.env", "r") as f:
-        for line in f:
-            if line.startswith("OPENROUTER_API_KEY="):
-                env_key = line.strip().split("=", 1)[1]
-
-api_key = os.environ.get("OPENROUTER_API_KEY", env_key)
-client = OpenAI(
-  base_url="https://openrouter.ai/api/v1",
-  api_key=api_key,
-)
 
 DATA_DIR = "../../documents"
 CACHE_DIR = "cache"
@@ -37,6 +25,9 @@ If CTA (Clinical Trial Agreement):
 {
   "type": "CTA",
   "study_id": "MRD-204-017 or VTX-330-201 or CLX-115-300",
+  "site_id": "...",
+  "investigator": "...",
+  "sponsor": "...",
   "holdback_percent": 10.0,
   "overhead_percent": 25.0,
   "budget": [
@@ -88,7 +79,9 @@ If Comms (Email/Slack):
   "date": "YYYY-MM-DD",
   "content_summary": "...",
   "mentions_invoices": ["INV-001"],
-  "status_update": "unpaid/disputed"
+  "status_update": "unpaid/disputed",
+  "study_id": "...",
+  "site_id": "..."
 }
 
 Respond ONLY with the JSON object. Do not include markdown formatting or any other text.
@@ -109,49 +102,41 @@ def process_file(file_path):
 
     print(f"Processing {filename}...")
     try:
-        messages = [
-            {
-                "role": "user",
-                "content": [
-                    {"type": "text", "text": f"Filename: {filename}\n\n" + PROMPT_TEMPLATE}
-                ]
-            }
-        ]
 
-        if filename.endswith(".pdf"):
-            pages = convert_from_path(file_path, 150) # lower DPI for faster processing/cheaper
-            for page in pages[:3]: # limit to 3 pages to avoid huge prompts
-                base64_image = encode_image(page)
-                messages[0]["content"].append({
-                    "type": "image_url",
-                    "image_url": {
-                        "url": f"data:image/jpeg;base64,{base64_image}"
-                    }
-                })
+        load_dotenv("../../.env")
+        
+        client = OpenAI(
+            base_url="https://api.groq.com/openai/v1",
+            api_key=os.environ.get("GROQ_API_KEY")
+        )
+
+        from local_parser import extract_text
+        if file_path.endswith(".pdf"):
+            text = extract_text(file_path)
         else:
             with open(file_path, "r", encoding="utf-8", errors="ignore") as f:
-                content = f.read()
-            messages[0]["content"].append({"type": "text", "text": f"Content:\n{content}"})
-            
+                text = f.read()
+
         completion = client.chat.completions.create(
-            model="openai/gpt-4o-mini",
-            messages=messages,
-            temperature=0.0
+            model="llama-3.3-70b-versatile",
+            response_format={"type": "json_object"},
+            messages=[
+                {
+                    "role": "user",
+                    "content": f"Filename: {filename}\n\nText:\n{text}\n\n{PROMPT_TEMPLATE}"
+                }
+            ]
         )
         
-        text = completion.choices[0].message.content
-        if text.startswith("```json"):
-            text = text[7:-3]
-        elif text.startswith("```"):
-            text = text[3:-3]
-            
-        parsed = json.loads(text.strip())
-        parsed["_source_file"] = filename
+        content = completion.choices[0].message.content
+        data = json.loads(content)
+        data["_source_file"] = filename
         
-        with open(cache_path, "w") as f:
-            json.dump(parsed, f, indent=2)
+        with open(cache_path, "w", encoding="utf-8") as f:
+            json.dump(data, f, indent=2, ensure_ascii=False)
             
-        return parsed
+        return data
+        
     except Exception as e:
         print(f"Error processing {filename}: {e}")
         return {"_source_file": filename, "error": str(e)}
@@ -164,10 +149,12 @@ def main():
     print(f"Found {len(files)} files to extract via LLM.")
     
     results = []
-    with ThreadPoolExecutor(max_workers=5) as executor:
+    with ThreadPoolExecutor(max_workers=1) as executor:
         futures = {executor.submit(process_file, f): f for f in files}
+        import time
         for future in as_completed(futures):
             results.append(future.result())
+            time.sleep(5.5)  # Stay under 12k TPM Groq limit
             
     print("Done extracting.")
 

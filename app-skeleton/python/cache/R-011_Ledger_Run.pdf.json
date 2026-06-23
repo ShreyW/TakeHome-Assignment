@@ -1,6 +1,14 @@
 {
   "type": "Remittance",
+  "remittance_id": "LR-011",
+  "payor": "Meridian Therapeutics",
+  "date": "2022-12-05",
   "total_paid": 2102.07,
-  "text": "\u25a0 LEDGER RUN\n Remittance Advice\nReference\nLR-011\nPayment date\n2022-12-05\nPayor\nMeridian Therapeutics\nMethod\nACH\nNet paid\n$2,102.07\nInvoice\nSubject\nGross\nAdjustment\nPaid\nINV-021\nS-12-021\n$2,335.63\n-$233.56 hold\n$2,102.07\nTotal\n$2,102.07\n\n",
+  "lines": [
+    {
+      "invoice_id": "INV-021",
+      "amount_paid": 2102.07
+    }
+  ],
   "_source_file": "R-011_Ledger_Run.pdf"
 }

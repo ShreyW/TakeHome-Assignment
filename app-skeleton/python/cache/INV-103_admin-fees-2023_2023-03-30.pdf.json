@@ -2,7 +2,15 @@
   "type": "Invoice",
   "invoice_id": "INV-103",
   "study_id": "MRD-204-017",
+  "site_id": "ARP-12",
+  "investigator": null,
+  "date": "2023-03-30",
   "total_amount": 2569.2,
-  "text": "\nINVOICE\n\nAtlas Research Partners (ARP-12) \u2014 Meridian Therapeutics, Inc.\nStudy: HORIZON (MRD-204-017)\n\nInvoice # INV-103\n\nInvoice date 2023-03-30\n\nService date 2024-01-01\n\nBill to Cordis Clinical\n\nFor Site Cost\nDescription Amount\nAdmin Fees 2023 + 2024 (2 x $1,284.60) $2,569.20\nTOTAL DUE $2,569.20\n\nRemit to Atlas Research Partners. Terms: Net 30.\n\f\n",
+  "line_items": [
+    {
+      "description": "Admin Fees 2023 + 2024 (2 x $1,284.60)",
+      "amount": 2569.2
+    }
+  ],
   "_source_file": "INV-103_admin-fees-2023_2023-03-30.pdf"
 }

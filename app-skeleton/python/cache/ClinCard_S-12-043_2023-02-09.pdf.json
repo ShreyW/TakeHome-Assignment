@@ -1,5 +1,8 @@
 {
-  "type": "Unknown",
-  "text": "Greenphire ClinCard\n Subject Reimbursement Receipt\nStudy\nHORIZON (MRD-204-017)\nSite\nAtlas Research Partners (ARP-12)\nSubject ID\nS-12-043\nVisit\nScreening Visit\nVisit date\n2023-02-09\nReimbursement\n$61.75  (participant travel + time)\nParticipant reimbursement loaded to the subject's ClinCard. This is a subject payment, not a site charge to the\nsponsor.\n\n",
+  "type": "ClinCard",
+  "subject_id": "S-12-043",
+  "date": "2023-02-09",
+  "amount": 61.75,
+  "description": "participant travel + time",
   "_source_file": "ClinCard_S-12-043_2023-02-09.pdf"
 }

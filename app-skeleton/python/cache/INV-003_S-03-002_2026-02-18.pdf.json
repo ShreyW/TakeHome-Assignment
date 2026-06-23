@@ -2,7 +2,17 @@
   "type": "Invoice",
   "invoice_id": "INV-003",
   "study_id": "CLX-115-300",
+  "site_id": "ARP-03",
+  "investigator": null,
+  "date": "2026-02-24",
   "total_amount": 742.3,
-  "text": "Statement of Charges\n \nProvider\nAtlas Research Partners (ARP-03)\nPayer\nCalyx Pharma\nStudy / Protocol\nNORTHSTAR (CLX-115-300)\nReference #\nINV-003\nInvoice date\n2026-02-24\nService date\n2026-02-18\nRe\nSubject S-03-002\nItem\nCharge\nScreening Visit\n$742.30\nBalance Due\n$742.30\nNet 30. Remit to Atlas Research Partners.\n\n",
+  "line_items": [
+    {
+      "description": "Screening Visit for Subject S-03-002",
+      "amount": 742.3
+    }
+  ],
+  "payer": "Calyx Pharma",
+  "provider": "Atlas Research Partners",
   "_source_file": "INV-003_S-03-002_2026-02-18.pdf"
 }

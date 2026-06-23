@@ -1,8 +1,49 @@
 {
   "type": "CTA",
   "study_id": "VTX-330-201",
+  "site_id": "ARP-12",
+  "investigator": "VANTIX BIOSCIENCES",
+  "sponsor": "VANTIX BIOSCIENCES",
   "holdback_percent": 0.0,
   "overhead_percent": 0.0,
-  "text": "\nVANTIX BIOSCIENCES\n\nInvestigator Payment Schedule \u2014 Protocol ASCEND (VTX-330-201)\n\nSite ARP-12 - Pl Elena Park - Effective 2025-11-01\n\nSchedule A \u2014 Per-Visit Payments\n\n \n\nVisit Payment (USD)\nScreening $685.40\nVi $418.75\nV2 $842.60\nV3 $523.10\nv4 $471.50\n\nSchedule B \u2014 Site Fees\nFee\n\nSite Initiation / Start-up\n\nIRB / Regulatory Submission\n\nPayment Terms\n\nAmount Cadence\n$8,000.00 one-time\n$3,500.00 one-time\n\nPer-visit payments are auto-paid through eClinicalGPS at the contracted visit amount; no site invoice is\n\nraised for scheduled visits.\n\nUnscheduled procedures (e.g. repeat labs) are billed per procedure performed and are NOT auto-paid\n\n\u2014 they must be invoiced separately.\n\nSite fees (start-up, IRB) are invoiced directly. Net 45.\n\nNo holdback, no overhead.\n\nUnscheduled procedures are billed per procedure performed \u2014 e.g. Repeat Hematology (Blood Draw, Central\n\nLab) at $112.40.\n\f\n",
+  "budget": [
+    {
+      "visit_name": "Screening",
+      "procedures": [],
+      "amount": 685.4
+    },
+    {
+      "visit_name": "Vi",
+      "procedures": [],
+      "amount": 418.75
+    },
+    {
+      "visit_name": "V2",
+      "procedures": [],
+      "amount": 842.6
+    },
+    {
+      "visit_name": "V3",
+      "procedures": [],
+      "amount": 523.1
+    },
+    {
+      "visit_name": "v4",
+      "procedures": [],
+      "amount": 471.5
+    }
+  ],
+  "site_fees": [
+    {
+      "name": "Site Initiation / Start-up",
+      "amount": 8000.0,
+      "cap": null
+    },
+    {
+      "name": "IRB / Regulatory Submission",
+      "amount": 3500.0,
+      "cap": null
+    }
+  ],
   "_source_file": "CTA_VTX-330-201.pdf"
 }

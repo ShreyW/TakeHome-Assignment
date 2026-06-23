@@ -2,7 +2,15 @@
   "type": "Invoice",
   "invoice_id": "INV-100",
   "study_id": "CLX-115-300",
+  "site_id": "ARP-03",
+  "investigator": null,
+  "date": "2025-12-12",
   "total_amount": 6284.5,
-  "text": "Statement of Charges\n \nProvider\nAtlas Research Partners (ARP-03)\nPayer\nCalyx Pharma\nStudy / Protocol\nNORTHSTAR (CLX-115-300)\nReference #\nINV-100\nInvoice date\n2025-12-12\nService date\n2025-12-10\nRe\nSite cost\nItem\nCharge\nSite Start-up\n$6,284.50\nBalance Due\n$6,284.50\nNet 30. Remit to Atlas Research Partners.\n\n",
+  "line_items": [
+    {
+      "description": "Site Start-up",
+      "amount": 6284.5
+    }
+  ],
   "_source_file": "INV-100_site-start-up_2025-12-12.pdf"
 }

@@ -1,8 +1,39 @@
 {
   "type": "CTA",
   "study_id": "CLX-115-300",
+  "site_id": "ARP-03",
+  "investigator": "P! Dana Whitfield",
+  "sponsor": "Calyx Pharma",
   "holdback_percent": 0.0,
   "overhead_percent": 0.0,
-  "text": "\nCalyx Pharma - NORTHSTAR (CLX-115-300)\n\nBudget Exhibit \u2014 Site ARP-03, P! Dana Whitfield, effective 2025-12-01\n\n \n\nLine Item Category / Amount\n\nScreening Visit Per visit $742.30\n\nVisit 1 Per visit $518.60\n\nVisit 2 Per visit $463.75\n\nVisit 3 Per visit $451.20\n\nSite Start-up Site fee $6,284.50\nTerms\n\nPer-visit billing at the contracted amount; site fees invoiced directly.\nNet 30. No holdback, no overhead.\n\f\n",
+  "budget": [
+    {
+      "visit_name": "Screening Visit",
+      "procedures": [],
+      "amount": 742.3
+    },
+    {
+      "visit_name": "Visit 1",
+      "procedures": [],
+      "amount": 518.6
+    },
+    {
+      "visit_name": "Visit 2",
+      "procedures": [],
+      "amount": 463.75
+    },
+    {
+      "visit_name": "Visit 3",
+      "procedures": [],
+      "amount": 451.2
+    }
+  ],
+  "site_fees": [
+    {
+      "name": "Site Start-up",
+      "amount": 6284.5,
+      "cap": null
+    }
+  ],
   "_source_file": "CTA_CLX-115-300.pdf"
 }

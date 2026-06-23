@@ -1,6 +1,14 @@
 {
   "type": "Remittance",
-  "total_paid": 0.0,
-  "text": "Vantix Biosciences\n Payment Notification\nRemittance\nR-INV-S02\nPaid on\n2025-12-30\nVia\nACH\nTotal remitted\n$2,940.60\nInvoice\nAmount Paid\nINV-101\n$2,940.60\n\n",
+  "remittance_id": "R-INV-S02",
+  "payor": "Vantix Biosciences",
+  "date": "2025-12-30",
+  "total_paid": 2940.6,
+  "lines": [
+    {
+      "invoice_id": "INV-101",
+      "amount_paid": 2940.6
+    }
+  ],
   "_source_file": "R-INV-S02_Vantix_Remittance.pdf"
 }

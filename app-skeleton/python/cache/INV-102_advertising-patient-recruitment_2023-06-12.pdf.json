@@ -2,7 +2,15 @@
   "type": "Invoice",
   "invoice_id": "INV-102",
   "study_id": "MRD-204-017",
+  "site_id": "ARP-12",
+  "investigator": null,
+  "date": "2023-06-12",
   "total_amount": 11642.8,
-  "text": "INVOICE\n Atlas Research Partners (ARP-12)  \u2192  Meridian Therapeutics, Inc.\nStudy: HORIZON (MRD-204-017)\nInvoice #\nINV-102\nInvoice date\n2023-06-12\nService date\n2023-06-01\nBill to\nCordis Clinical\nFor\nSite Cost\nDescription\nAmount\nAdvertising / Patient Recruitment\n$11,642.80\nTOTAL DUE\n$11,642.80\nRemit to Atlas Research Partners. Terms: Net 30.\n\n",
+  "line_items": [
+    {
+      "description": "Advertising / Patient Recruitment",
+      "amount": 11642.8
+    }
+  ],
   "_source_file": "INV-102_advertising-patient-recruitment_2023-06-12.pdf"
 }

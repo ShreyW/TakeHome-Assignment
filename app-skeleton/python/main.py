@@ -42,14 +42,32 @@ def reconcile():
     reg_ramp = load_csv("ramp_bill_pay_register.csv")
     reg_eclin = load_csv("eclinicalgps_autopay_register.csv")
 
+    ctas = [i for i in items if i.get("type", "").upper() == "CTA"]
+    study_meta = {}
+    for cta in ctas:
+        st_id = cta.get("study_id", "UNKNOWN")
+        s_key = "study-unknown"
+        if st_id == "MRD-204-017": s_key = "study-01-horizon"
+        elif st_id == "VTX-330-201": s_key = "study-02-ascend"
+        elif st_id == "CLX-115-300": s_key = "study-03-northstar"
+        sponsor = cta.get("sponsor", "")
+        keywords = [k.lower() for k in sponsor.replace(",", "").split() if len(k) > 3 and k.lower() not in ["therapeutics", "biosciences", "pharma", "inc", "llc"]]
+        study_meta[s_key] = {
+            "study_id": st_id,
+            "site_id": cta.get("site_id", "UNKNOWN"),
+            "investigator": cta.get("investigator", "UNKNOWN"),
+            "sponsor": sponsor,
+            "keywords": keywords,
+            "holdback": float(cta.get("holdback_percent", 0.0)) / 100.0
+        }
+
     results = {}
-    for s in STUDIES:
-        st_id = "MRD-204-017" if "01" in s else ("VTX-330-201" if "02" in s else "CLX-115-300")
-        results[s] = {
+    for s_key, meta in study_meta.items():
+        results[s_key] = {
             "chains": {
-                "study_id": st_id,
-                "site_id": "ARP-12",
-                "investigator": "Elena Park" if "01" in s else ("Dana Whitfield" if "03" in s else "Unknown"),
+                "study_id": meta["study_id"],
+                "site_id": meta["site_id"],
+                "investigator": meta["investigator"],
                 "payment_to_remittance": [],
                 "invoice_to_payment": [],
                 "invoice_to_activities": [],
@@ -58,9 +76,9 @@ def reconcile():
                 "entity_scope": []
             },
             "dashboard": {
-                "study_id": st_id,
-                "site_id": "ARP-12",
-                "investigator": "Elena Park" if "01" in s else ("Dana Whitfield" if "03" in s else "Unknown"),
+                "study_id": meta["study_id"],
+                "site_id": meta["site_id"],
+                "investigator": meta["investigator"],
                 "total_billed": 0,
                 "total_collected": 0,
                 "outstanding_ar": 0,
@@ -84,20 +102,19 @@ def reconcile():
     for dep in deposits:
         amt = float(dep["amount"])
         
-        # Determine study_key based on payor and date
         study_key = None
-        if "vantix" in dep["name"].lower():
-            study_key = "study-02-ascend"
-        elif "calyx" in dep["name"].lower() or "ramp" in dep["name"].lower():
-            # For Northstar, only 2026 Ramp deposits are valid, exclude the old 2023 deposit
-            if dep["date"].startswith("2026"):
-                study_key = "study-03-northstar"
-            else:
-                study_key = "study-01-horizon" # Misfiled or old
-        else:
-            study_key = "study-01-horizon"
+        dep_name = dep["name"].lower()
+        for s_key, meta in study_meta.items():
+            if any(kw in dep_name for kw in meta["keywords"]):
+                if "ramp" in dep_name and s_key == "study-03-northstar" and not dep["date"].startswith("2026"):
+                    continue
+                study_key = s_key
+                break
+        
+        if not study_key:
+            study_key = "study-01-horizon" # Default fallback
             
-        if study_key:
+        if study_key in results:
             results[study_key]["dashboard"]["total_collected"] += amt
             
         matched_remit = None
@@ -127,24 +144,24 @@ def reconcile():
         amt = float(inv.get("total_amount", 0))
         text = inv.get("text", "")
         
-        st_id = "UNKNOWN"
-        if "MRD-204-017" in text or "HORIZON" in text: st_id = "MRD-204-017"
-        elif "VTX-330-201" in text or "ASCEND" in text: st_id = "VTX-330-201"
-        elif "CLX-115-300" in text or "NORTHSTAR" in text: st_id = "CLX-115-300"
-        
-        # Override misfiled invoices based on the actual Payor or Subject ID
-        if "Meridian" in text or "S-12-" in text:
-            st_id = "MRD-204-017"
-        elif "Vantix" in text or "S-33-" in text:
-            st_id = "VTX-330-201"
-        elif "Calyx" in text or "S-03-" in text:
-            st_id = "CLX-115-300"
+        st_id = inv.get("study_id", "UNKNOWN")
+        study_key = None
+        for s_key, meta in study_meta.items():
+            if meta["study_id"] == st_id:
+                study_key = s_key
+                break
+                
+        if not study_key:
+            for s_key, meta in study_meta.items():
+                if meta["study_id"] in text or any(kw in text.lower() for kw in meta["keywords"]):
+                    study_key = s_key
+                    break
+                    
+        if not study_key:
+            study_key = "study-01-horizon" # Fallback
             
-        study_key = "study-01-horizon"
-        if st_id == "VTX-330-201": study_key = "study-02-ascend"
-        elif st_id == "CLX-115-300": study_key = "study-03-northstar"
-        
-        results[study_key]["dashboard"]["total_billed"] += amt
+        if study_key in results:
+            results[study_key]["dashboard"]["total_billed"] += amt
         
         # Determine status
         is_unpaid = False
@@ -153,7 +170,7 @@ def reconcile():
             if inv_id.lower() in c_text and ("unpaid" in c_text or "not authorize" in c_text):
                 is_unpaid = True
                 
-        holdback = 0.10 if study_key == "study-01-horizon" else 0.0
+        holdback = study_meta.get(study_key, {}).get("holdback", 0.0)
         
         matched_dep = None
         target_amt = amt * (1 - holdback)

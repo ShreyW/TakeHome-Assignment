@@ -1,8 +1,25 @@
 {
   "type": "Invoice",
   "invoice_id": "INV-D003",
-  "study_id": "MRD-204-017",
+  "study_id": "HORIZON (MRD-204-017)",
+  "site_id": "ARP-12",
+  "investigator": "",
+  "date": "2022-10-19",
   "total_amount": 1373.75,
-  "text": "INVOICE\n Atlas Research Partners (ARP-12)  \u2192  Meridian Therapeutics, Inc.\nStudy: HORIZON (MRD-204-017)\nInvoice #\nINV-D003\nInvoice date\n2022-10-19\nService date\n2022-06-25\nBill to\nCordis Clinical\nFor\nSubject S-12-003\nDescription\nAmount\nDXA Scan \u2014 procedures\n$1,099.00\nOverhead @ 25%\n$274.75\nTOTAL DUE\n$1,373.75\nRemit to Atlas Research Partners. Terms: Net 30.\n\n",
+  "line_items": [
+    {
+      "description": "DXA Scan — procedures",
+      "amount": 1099.0
+    },
+    {
+      "description": "Overhead @ 25%",
+      "amount": 274.75
+    }
+  ],
+  "bill_to": "Cordis Clinical",
+  "for": "Subject S-12-003",
+  "service_date": "2022-06-25",
+  "remit_to": "Atlas Research Partners",
+  "terms": "Net 30",
   "_source_file": "INV-D003_S-12-003_2022-06-25.pdf"
 }

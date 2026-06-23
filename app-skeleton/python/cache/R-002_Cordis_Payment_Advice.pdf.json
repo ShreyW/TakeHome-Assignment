@@ -1,6 +1,18 @@
 {
   "type": "Remittance",
+  "remittance_id": "R-002",
+  "payor": "CORDIS CLINICAL",
+  "date": "2022-07-05",
   "total_paid": 1937.82,
-  "text": "CORDIS CLINICAL\n Investigator Payments  \u00b7  Payment Advice\nAdvice #\nR-002\nPayment date\n2022-07-05\nMethod\nACH\nNet paid\n$1,937.82\nInvoice\nSubject\nGross\nWithholding (10%)\nNet Paid\nINV-002\nS-12-002\n$2,153.13\n-$215.31\n$1,937.82\nTotal\n$1,937.82\nPer CTA Article A-2, 10% of each visit payment is withheld and released at study close. Net reflects payment in full\nper terms.\n\n",
+  "lines": [
+    {
+      "invoice_id": "INV-002",
+      "amount_paid": 1937.82,
+      "net_amount": 1937.82,
+      "withholding_percent": 10,
+      "gross_amount": 2153.13,
+      "withholding_amount": 215.31
+    }
+  ],
   "_source_file": "R-002_Cordis_Payment_Advice.pdf"
 }

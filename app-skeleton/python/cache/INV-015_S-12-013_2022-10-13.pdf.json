@@ -2,7 +2,19 @@
   "type": "Invoice",
   "invoice_id": "INV-015",
   "study_id": "MRD-204-017",
+  "site_id": "ARP-12",
+  "investigator": "",
+  "date": "2023-01-12",
   "total_amount": 756.25,
-  "text": "INVOICE\n Atlas Research Partners (ARP-12)  \u2192  Meridian Therapeutics, Inc.\nStudy: HORIZON (MRD-204-017)\nInvoice #\nINV-015\nInvoice date\n2023-01-12\nService date\n2022-10-13\nBill to\nCordis Clinical\nFor\nSubject S-12-013\nDescription\nAmount\nUnscheduled Visit \u2014 procedures\n$605.00\nOverhead @ 25%\n$151.25\nTOTAL DUE\n$756.25\nRemit to Atlas Research Partners. Terms: Net 30.\n\n",
+  "line_items": [
+    {
+      "description": "Unscheduled Visit — procedures",
+      "amount": 605.0
+    },
+    {
+      "description": "Overhead @ 25%",
+      "amount": 151.25
+    }
+  ],
   "_source_file": "INV-015_S-12-013_2022-10-13.pdf"
 }
