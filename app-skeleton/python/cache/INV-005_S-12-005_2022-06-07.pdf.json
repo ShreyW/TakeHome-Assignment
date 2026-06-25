@@ -1,10 +1,13 @@
 {
   "type": "Invoice",
   "invoice_id": "INV-005",
+  "payer": "Meridian Therapeutics, Inc.",
   "study_id": "MRD-204-017",
-  "site_id": "ARP-12",
+  "protocol": "HORIZON",
   "investigator": null,
-  "date": "2022-09-15",
+  "invoice_date": "2022-09-15",
+  "service_date": "2022-06-07",
+  "subject_id": "S-12-005",
   "total_amount": 2335.63,
   "line_items": [
     {
@@ -16,5 +19,6 @@
       "amount": 467.13
     }
   ],
+  "net": 30,
   "_source_file": "INV-005_S-12-005_2022-06-07.pdf"
 }

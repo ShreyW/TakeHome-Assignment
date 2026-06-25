@@ -1,16 +1,20 @@
 {
   "type": "Invoice",
   "invoice_id": "INV-302",
+  "payer": "Meridian Therapeutics, Inc.",
   "study_id": "MRD-204-017",
-  "site_id": "ARP-12",
+  "protocol": "HORIZON",
   "investigator": null,
-  "date": "2025-09-23",
+  "invoice_date": "2025-09-23",
+  "service_date": "2025-09-01",
+  "subject_id": null,
   "total_amount": 3382.4,
   "line_items": [
     {
-      "description": "Pre-screen Chart Review",
+      "description": "Pre-screen Chart Review (64 x $52.85)",
       "amount": 3382.4
     }
   ],
+  "net": 30,
   "_source_file": "INV-302_pre-screen-chart_2025-09-23.pdf"
 }

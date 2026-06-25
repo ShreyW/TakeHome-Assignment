@@ -1,19 +1,79 @@
 {
   "study_id": "VTX-330-201",
   "site_id": "ARP-12",
-  "investigator": "Unknown",
-  "payment_to_remittance": [],
-  "invoice_to_payment": [
+  "investigator": "Elena Park",
+  "payment_to_remittance": [
     {
-      "invoice_id": "INV-101",
-      "payment_ids": [
-        "PL-902"
+      "payment_id": "PL-901",
+      "remittance_ids": [
+        "R-INV-S01"
       ],
-      "invoice_amount": 2940.6,
-      "amount_settled": 2940.6,
-      "status": "paid",
       "notes": null
     },
+    {
+      "payment_id": "PL-902",
+      "remittance_ids": [
+        "R-INV-S02"
+      ],
+      "notes": null
+    },
+    {
+      "payment_id": "PL-001",
+      "remittance_ids": [],
+      "notes": null
+    },
+    {
+      "payment_id": "PL-N2",
+      "remittance_ids": [],
+      "notes": null
+    },
+    {
+      "payment_id": "PL-004",
+      "remittance_ids": [],
+      "notes": null
+    },
+    {
+      "payment_id": "PL-006",
+      "remittance_ids": [],
+      "notes": null
+    },
+    {
+      "payment_id": "PL-010",
+      "remittance_ids": [],
+      "notes": null
+    },
+    {
+      "payment_id": "PL-002",
+      "remittance_ids": [],
+      "notes": null
+    },
+    {
+      "payment_id": "PL-012",
+      "remittance_ids": [],
+      "notes": null
+    },
+    {
+      "payment_id": "PL-005",
+      "remittance_ids": [],
+      "notes": null
+    },
+    {
+      "payment_id": "PL-007",
+      "remittance_ids": [],
+      "notes": null
+    },
+    {
+      "payment_id": "PL-003",
+      "remittance_ids": [],
+      "notes": null
+    },
+    {
+      "payment_id": "PL-008",
+      "remittance_ids": [],
+      "notes": null
+    }
+  ],
+  "invoice_to_payment": [
     {
       "invoice_id": "INV-100",
       "payment_ids": [
@@ -22,11 +82,373 @@
       "invoice_amount": 10842.5,
       "amount_settled": 10842.5,
       "status": "paid",
-      "notes": null
+      "notes": "Paid via remittance R-INV-S01"
+    },
+    {
+      "invoice_id": "INV-101",
+      "payment_ids": [
+        "PL-902"
+      ],
+      "invoice_amount": 2940.6,
+      "amount_settled": 2940.6,
+      "status": "paid",
+      "notes": "Paid via remittance R-INV-S02"
     }
   ],
   "invoice_to_activities": [],
-  "remittance_to_activities": [],
-  "activity_to_cta": [],
-  "entity_scope": []
+  "remittance_to_activities": [
+    {
+      "remittance_id": "R-INV-S01",
+      "lines": [
+        {
+          "activity_id": null,
+          "invoice_id": "INV-100",
+          "amount_allocated": 10842.5
+        }
+      ]
+    },
+    {
+      "remittance_id": "R-INV-S02",
+      "lines": [
+        {
+          "activity_id": null,
+          "invoice_id": "INV-101",
+          "amount_allocated": 2940.6
+        }
+      ]
+    }
+  ],
+  "activity_to_cta": [
+    {
+      "activity_id": "A-2001",
+      "cta_visit_label": "Screening",
+      "cta_amount": 685.4,
+      "match_confidence": "MEDIUM",
+      "notes": "autopaid"
+    },
+    {
+      "activity_id": "A-2002",
+      "cta_visit_label": "V1",
+      "cta_amount": 418.75,
+      "match_confidence": "MEDIUM",
+      "notes": "autopaid"
+    },
+    {
+      "activity_id": "A-2003",
+      "cta_visit_label": "V2",
+      "cta_amount": 842.6,
+      "match_confidence": "MEDIUM",
+      "notes": "autopaid"
+    },
+    {
+      "activity_id": "A-2U2",
+      "cta_visit_label": null,
+      "cta_amount": null,
+      "match_confidence": null,
+      "notes": null
+    },
+    {
+      "activity_id": "A-2004",
+      "cta_visit_label": "Screening",
+      "cta_amount": 685.4,
+      "match_confidence": "MEDIUM",
+      "notes": "autopaid"
+    },
+    {
+      "activity_id": "A-2005",
+      "cta_visit_label": "V1",
+      "cta_amount": 418.75,
+      "match_confidence": "MEDIUM",
+      "notes": "autopaid"
+    },
+    {
+      "activity_id": "A-2U3",
+      "cta_visit_label": null,
+      "cta_amount": null,
+      "match_confidence": null,
+      "notes": null
+    },
+    {
+      "activity_id": "A-2006",
+      "cta_visit_label": "Screening",
+      "cta_amount": 685.4,
+      "match_confidence": "MEDIUM",
+      "notes": "autopaid"
+    },
+    {
+      "activity_id": "A-2007",
+      "cta_visit_label": "V1",
+      "cta_amount": 418.75,
+      "match_confidence": "MEDIUM",
+      "notes": "autopaid"
+    },
+    {
+      "activity_id": "A-2008",
+      "cta_visit_label": "V2",
+      "cta_amount": 842.6,
+      "match_confidence": "MEDIUM",
+      "notes": "autopaid"
+    },
+    {
+      "activity_id": "A-2009",
+      "cta_visit_label": "V3",
+      "cta_amount": 523.1,
+      "match_confidence": "MEDIUM",
+      "notes": "autopaid"
+    },
+    {
+      "activity_id": "A-2U1",
+      "cta_visit_label": null,
+      "cta_amount": null,
+      "match_confidence": null,
+      "notes": null
+    },
+    {
+      "activity_id": "A-2010",
+      "cta_visit_label": "Screening",
+      "cta_amount": 685.4,
+      "match_confidence": "MEDIUM",
+      "notes": "autopaid"
+    },
+    {
+      "activity_id": "A-2011",
+      "cta_visit_label": "V1",
+      "cta_amount": 418.75,
+      "match_confidence": "MEDIUM",
+      "notes": "autopaid"
+    },
+    {
+      "activity_id": "A-2012",
+      "cta_visit_label": "Screening",
+      "cta_amount": 685.4,
+      "match_confidence": "MEDIUM",
+      "notes": "autopaid"
+    }
+  ],
+  "entity_scope": [
+    {
+      "entity_type": "invoice",
+      "entity_id": "INV-100",
+      "study_id": "VTX-330-201",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "payment",
+      "entity_id": "PL-901",
+      "study_id": "VTX-330-201",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "invoice",
+      "entity_id": "INV-101",
+      "study_id": "VTX-330-201",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "payment",
+      "entity_id": "PL-902",
+      "study_id": "VTX-330-201",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "remittance",
+      "entity_id": "R-INV-S01",
+      "study_id": "VTX-330-201",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "remittance",
+      "entity_id": "R-INV-S02",
+      "study_id": "VTX-330-201",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "payment",
+      "entity_id": "PL-001",
+      "study_id": "VTX-330-201",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "payment",
+      "entity_id": "PL-N2",
+      "study_id": "VTX-330-201",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "payment",
+      "entity_id": "PL-004",
+      "study_id": "VTX-330-201",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "payment",
+      "entity_id": "PL-006",
+      "study_id": "VTX-330-201",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "payment",
+      "entity_id": "PL-010",
+      "study_id": "VTX-330-201",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "payment",
+      "entity_id": "PL-002",
+      "study_id": "VTX-330-201",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "payment",
+      "entity_id": "PL-012",
+      "study_id": "VTX-330-201",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "payment",
+      "entity_id": "PL-005",
+      "study_id": "VTX-330-201",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "payment",
+      "entity_id": "PL-007",
+      "study_id": "VTX-330-201",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "payment",
+      "entity_id": "PL-003",
+      "study_id": "VTX-330-201",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "payment",
+      "entity_id": "PL-008",
+      "study_id": "VTX-330-201",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "activity",
+      "entity_id": "A-2001",
+      "study_id": "VTX-330-201",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "activity",
+      "entity_id": "A-2002",
+      "study_id": "VTX-330-201",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "activity",
+      "entity_id": "A-2003",
+      "study_id": "VTX-330-201",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "activity",
+      "entity_id": "A-2U2",
+      "study_id": "VTX-330-201",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "activity",
+      "entity_id": "A-2004",
+      "study_id": "VTX-330-201",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "activity",
+      "entity_id": "A-2005",
+      "study_id": "VTX-330-201",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "activity",
+      "entity_id": "A-2U3",
+      "study_id": "VTX-330-201",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "activity",
+      "entity_id": "A-2006",
+      "study_id": "VTX-330-201",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "activity",
+      "entity_id": "A-2007",
+      "study_id": "VTX-330-201",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "activity",
+      "entity_id": "A-2008",
+      "study_id": "VTX-330-201",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "activity",
+      "entity_id": "A-2009",
+      "study_id": "VTX-330-201",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "activity",
+      "entity_id": "A-2U1",
+      "study_id": "VTX-330-201",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "activity",
+      "entity_id": "A-2010",
+      "study_id": "VTX-330-201",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "activity",
+      "entity_id": "A-2011",
+      "study_id": "VTX-330-201",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "activity",
+      "entity_id": "A-2012",
+      "study_id": "VTX-330-201",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    }
+  ]
 }

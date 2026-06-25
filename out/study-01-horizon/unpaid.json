@@ -3,7 +3,7 @@
     "ref_type": "invoice",
     "ref_id": "INV-105",
     "amount_expected": 13061.6,
-    "age_days": 130,
+    "age_days": null,
     "reason": "sent_not_paid",
     "evidence": "comms confirm unpaid",
     "confidence": "HIGH"

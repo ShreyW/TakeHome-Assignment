@@ -6,15 +6,13 @@
     {
       "payment_id": "BT-002",
       "remittance_ids": [
-        "LR-002"
+        "R-002"
       ],
       "notes": null
     },
     {
       "payment_id": "BT-005",
-      "remittance_ids": [
-        "LR-005"
-      ],
+      "remittance_ids": [],
       "notes": null
     },
     {
@@ -83,84 +81,144 @@
   ],
   "invoice_to_payment": [
     {
-      "invoice_id": "INV-104",
+      "invoice_id": "INV-001",
       "payment_ids": [
-        "BT-008"
+        "BT-001"
       ],
-      "invoice_amount": 1284.6,
-      "amount_settled": 1284.6,
-      "status": "paid",
-      "notes": null
-    },
-    {
-      "invoice_id": "INV-004",
-      "payment_ids": [],
       "invoice_amount": 2983.75,
-      "amount_settled": 2685.375,
+      "amount_settled": 2685.38,
       "status": "paid",
-      "notes": "bundled remittance"
+      "notes": "Withheld $298.37 (via remittance LR-001)"
     },
     {
-      "invoice_id": "INV-101",
-      "payment_ids": [],
-      "invoice_amount": 2438.9,
-      "amount_settled": 2195.01,
-      "status": "paid",
-      "notes": "bundled remittance"
-    },
-    {
-      "invoice_id": "INV-102",
-      "payment_ids": [
-        "BT-007"
-      ],
-      "invoice_amount": 11642.8,
-      "amount_settled": 11642.8,
-      "status": "paid",
-      "notes": null
-    },
-    {
-      "invoice_id": "INV-013",
-      "payment_ids": [],
-      "invoice_amount": 2983.75,
-      "amount_settled": 2685.375,
-      "status": "paid",
-      "notes": "bundled remittance"
-    },
-    {
-      "invoice_id": "INV-012",
+      "invoice_id": "INV-002",
       "payment_ids": [
         "BT-002"
       ],
       "invoice_amount": 2153.13,
       "amount_settled": 1937.82,
       "status": "paid",
-      "notes": "10.0% CTA holdback"
+      "notes": "Withheld $215.31 (via remittance R-002)"
     },
     {
-      "invoice_id": "INV-D003",
-      "payment_ids": [],
-      "invoice_amount": 1373.75,
-      "amount_settled": 1236.375,
+      "invoice_id": "INV-003",
+      "payment_ids": [
+        "BT-001"
+      ],
+      "invoice_amount": 830.63,
+      "amount_settled": 747.57,
       "status": "paid",
-      "notes": "bundled remittance"
+      "notes": "Withheld $83.06 (via remittance LR-001)"
+    },
+    {
+      "invoice_id": "INV-004",
+      "payment_ids": [
+        "BT-001"
+      ],
+      "invoice_amount": 2983.75,
+      "amount_settled": 2685.38,
+      "status": "paid",
+      "notes": "Withheld $298.37 (via remittance LR-001)"
     },
     {
       "invoice_id": "INV-005",
+      "payment_ids": [
+        "BT-003"
+      ],
+      "invoice_amount": 2335.63,
+      "amount_settled": 2102.07,
+      "status": "paid",
+      "notes": "Withheld $233.56 (via remittance LR-003)"
+    },
+    {
+      "invoice_id": "INV-009",
+      "payment_ids": [
+        "BT-003"
+      ],
+      "invoice_amount": 2983.75,
+      "amount_settled": 2685.38,
+      "status": "paid",
+      "notes": "Withheld $298.37 (via remittance LR-003)"
+    },
+    {
+      "invoice_id": "INV-010",
+      "payment_ids": [
+        "BT-003"
+      ],
+      "invoice_amount": 2983.75,
+      "amount_settled": 2685.38,
+      "status": "paid",
+      "notes": "Withheld $298.37 (via remittance LR-003)"
+    },
+    {
+      "invoice_id": "INV-012",
+      "payment_ids": [
+        "BT-003"
+      ],
+      "invoice_amount": 2153.13,
+      "amount_settled": 1937.82,
+      "status": "paid",
+      "notes": "Withheld $215.31 (via remittance LR-003)"
+    },
+    {
+      "invoice_id": "INV-013",
+      "payment_ids": [
+        "BT-004"
+      ],
+      "invoice_amount": 2983.75,
+      "amount_settled": 2685.38,
+      "status": "paid",
+      "notes": "Withheld $298.37 (via remittance LR-004)"
+    },
+    {
+      "invoice_id": "INV-014",
+      "payment_ids": [
+        "BT-004"
+      ],
+      "invoice_amount": 463.75,
+      "amount_settled": 417.38,
+      "status": "paid",
+      "notes": "Withheld $46.37 (via remittance LR-004)"
+    },
+    {
+      "invoice_id": "INV-015",
+      "payment_ids": [
+        "BT-004"
+      ],
+      "invoice_amount": 756.25,
+      "amount_settled": 680.63,
+      "status": "paid",
+      "notes": "Withheld $75.62 (via remittance LR-004)"
+    },
+    {
+      "invoice_id": "INV-017",
+      "payment_ids": [
+        "BT-004"
+      ],
+      "invoice_amount": 2983.75,
+      "amount_settled": 2685.38,
+      "status": "paid",
+      "notes": "Withheld $298.37 (via remittance LR-004)"
+    },
+    {
+      "invoice_id": "INV-018",
+      "payment_ids": [
+        "BT-004"
+      ],
+      "invoice_amount": 2983.75,
+      "amount_settled": 2685.38,
+      "status": "paid",
+      "notes": "Withheld $298.37 (via remittance LR-004)"
+    },
+    {
+      "invoice_id": "INV-021",
       "payment_ids": [
         "BT-011"
       ],
       "invoice_amount": 2335.63,
       "amount_settled": 2102.07,
       "status": "paid",
-      "notes": "10.0% CTA holdback"
-    },
-    {
-      "invoice_id": "INV-015",
-      "payment_ids": [],
-      "invoice_amount": 756.25,
-      "amount_settled": 680.625,
-      "status": "paid",
-      "notes": "bundled remittance"
+      "notes": "Withheld $233.56 (via remittance LR-011)"
     },
     {
       "invoice_id": "INV-100",
@@ -170,23 +228,85 @@
       "invoice_amount": 14317.5,
       "amount_settled": 14317.5,
       "status": "paid",
-      "notes": null
+      "notes": "Paid via direct wire"
     },
     {
-      "invoice_id": "INV-017",
-      "payment_ids": [],
-      "invoice_amount": 2983.75,
-      "amount_settled": 2685.375,
+      "invoice_id": "INV-101",
+      "payment_ids": [
+        "BT-006"
+      ],
+      "invoice_amount": 2438.9,
+      "amount_settled": 2438.9,
       "status": "paid",
-      "notes": "bundled remittance"
+      "notes": "Paid via remittance LR-006"
     },
     {
-      "invoice_id": "INV-003",
-      "payment_ids": [],
-      "invoice_amount": 830.63,
-      "amount_settled": 747.567,
+      "invoice_id": "INV-102",
+      "payment_ids": [
+        "BT-007"
+      ],
+      "invoice_amount": 11642.8,
+      "amount_settled": 11642.8,
       "status": "paid",
-      "notes": "bundled remittance"
+      "notes": "Paid via remittance LR-007"
+    },
+    {
+      "invoice_id": "INV-103",
+      "payment_ids": [
+        "BT-006"
+      ],
+      "invoice_amount": 2569.2,
+      "amount_settled": 2569.2,
+      "status": "paid",
+      "notes": "Paid via remittance LR-006"
+    },
+    {
+      "invoice_id": "INV-104",
+      "payment_ids": [
+        "BT-008"
+      ],
+      "invoice_amount": 1284.6,
+      "amount_settled": 1284.6,
+      "status": "paid",
+      "notes": "Paid via remittance LR-008"
+    },
+    {
+      "invoice_id": "INV-105",
+      "payment_ids": [],
+      "invoice_amount": 13061.6,
+      "amount_settled": 0.0,
+      "status": "unpaid",
+      "notes": "flagged unpaid in comms"
+    },
+    {
+      "invoice_id": "INV-302",
+      "payment_ids": [
+        "BT-009"
+      ],
+      "invoice_amount": 3382.4,
+      "amount_settled": 3382.4,
+      "status": "paid",
+      "notes": "Paid via remittance LR-009"
+    },
+    {
+      "invoice_id": "INV-303",
+      "payment_ids": [
+        "BT-009"
+      ],
+      "invoice_amount": 16134.8,
+      "amount_settled": 16134.8,
+      "status": "paid",
+      "notes": "Paid via remittance LR-009"
+    },
+    {
+      "invoice_id": "INV-D003",
+      "payment_ids": [
+        "BT-001"
+      ],
+      "invoice_amount": 1373.75,
+      "amount_settled": 1236.38,
+      "status": "paid",
+      "notes": "Withheld $137.37 (via remittance LR-001)"
     },
     {
       "invoice_id": "INV-D020",
@@ -196,91 +316,888 @@
       "invoice_amount": 308.34,
       "amount_settled": 308.34,
       "status": "paid",
-      "notes": null
-    },
-    {
-      "invoice_id": "INV-103",
-      "payment_ids": [],
-      "invoice_amount": 2569.2,
-      "amount_settled": 2312.2799999999997,
-      "status": "paid",
-      "notes": "bundled remittance"
-    },
-    {
-      "invoice_id": "INV-302",
-      "payment_ids": [],
-      "invoice_amount": 3382.4,
-      "amount_settled": 3044.1600000000003,
-      "status": "paid",
-      "notes": "bundled remittance"
-    },
-    {
-      "invoice_id": "INV-010",
-      "payment_ids": [],
-      "invoice_amount": 2983.75,
-      "amount_settled": 2685.375,
-      "status": "paid",
-      "notes": "bundled remittance"
-    },
-    {
-      "invoice_id": "INV-014",
-      "payment_ids": [],
-      "invoice_amount": 463.75,
-      "amount_settled": 417.375,
-      "status": "paid",
-      "notes": "bundled remittance"
-    },
+      "notes": "Paid via remittance LR-010"
+    }
+  ],
+  "invoice_to_activities": [
     {
       "invoice_id": "INV-001",
-      "payment_ids": [],
-      "invoice_amount": 2983.75,
-      "amount_settled": 2685.375,
-      "status": "paid",
-      "notes": "bundled remittance"
-    },
-    {
-      "invoice_id": "INV-303",
-      "payment_ids": [],
-      "invoice_amount": 16134.8,
-      "amount_settled": 14521.32,
-      "status": "paid",
-      "notes": "bundled remittance"
+      "activity_ids": [
+        "RT-S-12-001-0"
+      ]
     },
     {
       "invoice_id": "INV-002",
-      "payment_ids": [],
-      "invoice_amount": 2153.13,
-      "amount_settled": 1937.8170000000002,
-      "status": "paid",
-      "notes": "bundled remittance"
+      "activity_ids": [
+        "RT-S-12-002-1"
+      ]
     },
     {
-      "invoice_id": "INV-021",
-      "payment_ids": [],
-      "invoice_amount": 2335.63,
-      "amount_settled": 2102.067,
-      "status": "paid",
-      "notes": "bundled remittance"
+      "invoice_id": "INV-003",
+      "activity_ids": [
+        "RT-S-12-003-2"
+      ]
     },
     {
-      "invoice_id": "INV-018",
-      "payment_ids": [],
-      "invoice_amount": 2983.75,
-      "amount_settled": 2685.375,
-      "status": "paid",
-      "notes": "bundled remittance"
+      "invoice_id": "INV-004",
+      "activity_ids": [
+        "RT-S-12-004-4"
+      ]
+    },
+    {
+      "invoice_id": "INV-005",
+      "activity_ids": [
+        "RT-S-12-005-5"
+      ]
     },
     {
       "invoice_id": "INV-009",
-      "payment_ids": [],
-      "invoice_amount": 2983.75,
-      "amount_settled": 2685.375,
-      "status": "paid",
-      "notes": "bundled remittance"
+      "activity_ids": [
+        "RT-S-12-009-6"
+      ]
+    },
+    {
+      "invoice_id": "INV-010",
+      "activity_ids": [
+        "RT-S-12-010-7"
+      ]
+    },
+    {
+      "invoice_id": "INV-012",
+      "activity_ids": [
+        "RT-S-12-012-8"
+      ]
+    },
+    {
+      "invoice_id": "INV-013",
+      "activity_ids": [
+        "RT-S-12-013-9"
+      ]
+    },
+    {
+      "invoice_id": "INV-014",
+      "activity_ids": [
+        "RT-S-12-013-10"
+      ]
+    },
+    {
+      "invoice_id": "INV-015",
+      "activity_ids": [
+        "RT-S-12-013-11"
+      ]
+    },
+    {
+      "invoice_id": "INV-017",
+      "activity_ids": [
+        "RT-S-12-017-12"
+      ]
+    },
+    {
+      "invoice_id": "INV-018",
+      "activity_ids": [
+        "RT-S-12-018-13"
+      ]
+    },
+    {
+      "invoice_id": "INV-021",
+      "activity_ids": [
+        "RT-S-12-021-14"
+      ]
+    },
+    {
+      "invoice_id": "INV-D003",
+      "activity_ids": [
+        "RT-S-12-003-3"
+      ]
     }
   ],
-  "invoice_to_activities": [],
-  "remittance_to_activities": [],
-  "activity_to_cta": [],
-  "entity_scope": []
+  "remittance_to_activities": [
+    {
+      "remittance_id": "LR-001",
+      "lines": [
+        {
+          "activity_id": "RT-S-12-001-0",
+          "invoice_id": "INV-001",
+          "amount_allocated": 2685.38
+        },
+        {
+          "activity_id": "RT-S-12-003-2",
+          "invoice_id": "INV-003",
+          "amount_allocated": 747.57
+        },
+        {
+          "activity_id": "RT-S-12-003-3",
+          "invoice_id": "INV-D003",
+          "amount_allocated": 1236.38
+        },
+        {
+          "activity_id": "RT-S-12-004-4",
+          "invoice_id": "INV-004",
+          "amount_allocated": 2685.38
+        }
+      ]
+    },
+    {
+      "remittance_id": "R-002",
+      "lines": [
+        {
+          "activity_id": "RT-S-12-002-1",
+          "invoice_id": "INV-002",
+          "amount_allocated": 1937.82
+        }
+      ]
+    },
+    {
+      "remittance_id": "LR-003",
+      "lines": [
+        {
+          "activity_id": "RT-S-12-005-5",
+          "invoice_id": "INV-005",
+          "amount_allocated": 2102.07
+        },
+        {
+          "activity_id": "RT-S-12-009-6",
+          "invoice_id": "INV-009",
+          "amount_allocated": 2685.38
+        },
+        {
+          "activity_id": "RT-S-12-010-7",
+          "invoice_id": "INV-010",
+          "amount_allocated": 2685.38
+        },
+        {
+          "activity_id": "RT-S-12-012-8",
+          "invoice_id": "INV-012",
+          "amount_allocated": 1937.82
+        }
+      ]
+    },
+    {
+      "remittance_id": "LR-004",
+      "lines": [
+        {
+          "activity_id": "RT-S-12-013-9",
+          "invoice_id": "INV-013",
+          "amount_allocated": 2685.38
+        },
+        {
+          "activity_id": "RT-S-12-013-10",
+          "invoice_id": "INV-014",
+          "amount_allocated": 417.38
+        },
+        {
+          "activity_id": "RT-S-12-013-11",
+          "invoice_id": "INV-015",
+          "amount_allocated": 680.63
+        },
+        {
+          "activity_id": "RT-S-12-017-12",
+          "invoice_id": "INV-017",
+          "amount_allocated": 2685.38
+        },
+        {
+          "activity_id": "RT-S-12-018-13",
+          "invoice_id": "INV-018",
+          "amount_allocated": 2685.38
+        }
+      ]
+    },
+    {
+      "remittance_id": "LR-006",
+      "lines": [
+        {
+          "activity_id": null,
+          "invoice_id": "INV-101",
+          "amount_allocated": 2438.9
+        },
+        {
+          "activity_id": null,
+          "invoice_id": "INV-103",
+          "amount_allocated": 2569.2
+        }
+      ]
+    },
+    {
+      "remittance_id": "LR-007",
+      "lines": [
+        {
+          "activity_id": null,
+          "invoice_id": "INV-102",
+          "amount_allocated": 11642.8
+        }
+      ]
+    },
+    {
+      "remittance_id": "LR-008",
+      "lines": [
+        {
+          "activity_id": null,
+          "invoice_id": "INV-104",
+          "amount_allocated": 1284.6
+        }
+      ]
+    },
+    {
+      "remittance_id": "LR-009",
+      "lines": [
+        {
+          "activity_id": null,
+          "invoice_id": "INV-302",
+          "amount_allocated": 3382.4
+        },
+        {
+          "activity_id": null,
+          "invoice_id": "INV-303",
+          "amount_allocated": 16134.8
+        }
+      ]
+    },
+    {
+      "remittance_id": "LR-010",
+      "lines": [
+        {
+          "activity_id": null,
+          "invoice_id": "INV-D020",
+          "amount_allocated": 308.34
+        }
+      ]
+    },
+    {
+      "remittance_id": "LR-011",
+      "lines": [
+        {
+          "activity_id": "RT-S-12-021-14",
+          "invoice_id": "INV-021",
+          "amount_allocated": 2102.07
+        }
+      ]
+    }
+  ],
+  "activity_to_cta": [
+    {
+      "activity_id": "RT-S-12-001-0",
+      "cta_visit_label": "Screening+TVU",
+      "cta_amount": 2983.75,
+      "match_confidence": "MEDIUM",
+      "notes": null
+    },
+    {
+      "activity_id": "RT-S-12-002-1",
+      "cta_visit_label": "Screening",
+      "cta_amount": 2153.12,
+      "match_confidence": "HIGH",
+      "notes": null
+    },
+    {
+      "activity_id": "RT-S-12-003-2",
+      "cta_visit_label": "TVU",
+      "cta_amount": 830.62,
+      "match_confidence": "MEDIUM",
+      "notes": null
+    },
+    {
+      "activity_id": "RT-S-12-003-3",
+      "cta_visit_label": "DXA",
+      "cta_amount": 1373.75,
+      "match_confidence": "HIGH",
+      "notes": null
+    },
+    {
+      "activity_id": "RT-S-12-004-4",
+      "cta_visit_label": "Screening+TVU",
+      "cta_amount": 2983.75,
+      "match_confidence": "MEDIUM",
+      "notes": null
+    },
+    {
+      "activity_id": "RT-S-12-005-5",
+      "cta_visit_label": "Imaging",
+      "cta_amount": 2335.62,
+      "match_confidence": "HIGH",
+      "notes": null
+    },
+    {
+      "activity_id": "RT-S-12-009-6",
+      "cta_visit_label": "Screening+TVU",
+      "cta_amount": 2983.75,
+      "match_confidence": "MEDIUM",
+      "notes": null
+    },
+    {
+      "activity_id": "RT-S-12-010-7",
+      "cta_visit_label": "Screening+TVU",
+      "cta_amount": 2983.75,
+      "match_confidence": "MEDIUM",
+      "notes": null
+    },
+    {
+      "activity_id": "RT-S-12-012-8",
+      "cta_visit_label": "Screening",
+      "cta_amount": 2153.12,
+      "match_confidence": "HIGH",
+      "notes": null
+    },
+    {
+      "activity_id": "RT-S-12-013-9",
+      "cta_visit_label": "Screening+TVU",
+      "cta_amount": 2983.75,
+      "match_confidence": "MEDIUM",
+      "notes": null
+    },
+    {
+      "activity_id": "RT-S-12-013-10",
+      "cta_visit_label": "UnschLab",
+      "cta_amount": 463.75,
+      "match_confidence": "MEDIUM",
+      "notes": null
+    },
+    {
+      "activity_id": "RT-S-12-013-11",
+      "cta_visit_label": "UnschVisit",
+      "cta_amount": 756.25,
+      "match_confidence": "MEDIUM",
+      "notes": null
+    },
+    {
+      "activity_id": "RT-S-12-017-12",
+      "cta_visit_label": "Screening+TVU",
+      "cta_amount": 2983.75,
+      "match_confidence": "MEDIUM",
+      "notes": null
+    },
+    {
+      "activity_id": "RT-S-12-018-13",
+      "cta_visit_label": "Screening+TVU",
+      "cta_amount": 2983.75,
+      "match_confidence": "MEDIUM",
+      "notes": null
+    },
+    {
+      "activity_id": "RT-S-12-021-14",
+      "cta_visit_label": "Imaging",
+      "cta_amount": 2335.62,
+      "match_confidence": "HIGH",
+      "notes": null
+    },
+    {
+      "activity_id": "RT-S-12-037-15",
+      "cta_visit_label": "Screening",
+      "cta_amount": 2153.12,
+      "match_confidence": "MEDIUM",
+      "notes": "unbilled"
+    },
+    {
+      "activity_id": "RT-S-12-039-16",
+      "cta_visit_label": "Screening",
+      "cta_amount": 2153.12,
+      "match_confidence": "MEDIUM",
+      "notes": "unbilled"
+    },
+    {
+      "activity_id": "RT-S-12-040-17",
+      "cta_visit_label": "Screening",
+      "cta_amount": 2153.12,
+      "match_confidence": "MEDIUM",
+      "notes": "unbilled"
+    },
+    {
+      "activity_id": "RT-S-12-040-18",
+      "cta_visit_label": "DXA",
+      "cta_amount": 1373.75,
+      "match_confidence": "MEDIUM",
+      "notes": "unbilled"
+    },
+    {
+      "activity_id": "RT-S-12-041-19",
+      "cta_visit_label": "Screening",
+      "cta_amount": 2153.12,
+      "match_confidence": "MEDIUM",
+      "notes": "unbilled"
+    },
+    {
+      "activity_id": "RT-S-12-042-20",
+      "cta_visit_label": "Screening",
+      "cta_amount": 2153.12,
+      "match_confidence": "MEDIUM",
+      "notes": "unbilled"
+    },
+    {
+      "activity_id": "RT-S-12-043-21",
+      "cta_visit_label": "Screening",
+      "cta_amount": 2153.12,
+      "match_confidence": "MEDIUM",
+      "notes": "unbilled"
+    }
+  ],
+  "entity_scope": [
+    {
+      "entity_type": "invoice",
+      "entity_id": "INV-001",
+      "study_id": "MRD-204-017",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "payment",
+      "entity_id": "BT-001",
+      "study_id": "MRD-204-017",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "invoice",
+      "entity_id": "INV-002",
+      "study_id": "MRD-204-017",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "payment",
+      "entity_id": "BT-002",
+      "study_id": "MRD-204-017",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "invoice",
+      "entity_id": "INV-003",
+      "study_id": "MRD-204-017",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "invoice",
+      "entity_id": "INV-004",
+      "study_id": "MRD-204-017",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "invoice",
+      "entity_id": "INV-005",
+      "study_id": "MRD-204-017",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "payment",
+      "entity_id": "BT-003",
+      "study_id": "MRD-204-017",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "invoice",
+      "entity_id": "INV-009",
+      "study_id": "MRD-204-017",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "invoice",
+      "entity_id": "INV-010",
+      "study_id": "MRD-204-017",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "invoice",
+      "entity_id": "INV-012",
+      "study_id": "MRD-204-017",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "invoice",
+      "entity_id": "INV-013",
+      "study_id": "MRD-204-017",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "payment",
+      "entity_id": "BT-004",
+      "study_id": "MRD-204-017",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "invoice",
+      "entity_id": "INV-014",
+      "study_id": "MRD-204-017",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "invoice",
+      "entity_id": "INV-015",
+      "study_id": "MRD-204-017",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "invoice",
+      "entity_id": "INV-017",
+      "study_id": "MRD-204-017",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "invoice",
+      "entity_id": "INV-018",
+      "study_id": "MRD-204-017",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "invoice",
+      "entity_id": "INV-021",
+      "study_id": "MRD-204-017",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "payment",
+      "entity_id": "BT-011",
+      "study_id": "MRD-204-017",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "invoice",
+      "entity_id": "INV-100",
+      "study_id": "MRD-204-017",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "payment",
+      "entity_id": "BT-005",
+      "study_id": "MRD-204-017",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "invoice",
+      "entity_id": "INV-101",
+      "study_id": "MRD-204-017",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "payment",
+      "entity_id": "BT-006",
+      "study_id": "MRD-204-017",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "invoice",
+      "entity_id": "INV-102",
+      "study_id": "MRD-204-017",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "payment",
+      "entity_id": "BT-007",
+      "study_id": "MRD-204-017",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "invoice",
+      "entity_id": "INV-103",
+      "study_id": "MRD-204-017",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "invoice",
+      "entity_id": "INV-104",
+      "study_id": "MRD-204-017",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "payment",
+      "entity_id": "BT-008",
+      "study_id": "MRD-204-017",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "invoice",
+      "entity_id": "INV-105",
+      "study_id": "MRD-204-017",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "invoice",
+      "entity_id": "INV-302",
+      "study_id": "MRD-204-017",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "payment",
+      "entity_id": "BT-009",
+      "study_id": "MRD-204-017",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "invoice",
+      "entity_id": "INV-303",
+      "study_id": "MRD-204-017",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "invoice",
+      "entity_id": "INV-D003",
+      "study_id": "MRD-204-017",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "invoice",
+      "entity_id": "INV-D020",
+      "study_id": "MRD-204-017",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "payment",
+      "entity_id": "BT-010",
+      "study_id": "MRD-204-017",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "remittance",
+      "entity_id": "R-002",
+      "study_id": "MRD-204-017",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "remittance",
+      "entity_id": "LR-001",
+      "study_id": "MRD-204-017",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "remittance",
+      "entity_id": "LR-003",
+      "study_id": "MRD-204-017",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "remittance",
+      "entity_id": "LR-011",
+      "study_id": "MRD-204-017",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "remittance",
+      "entity_id": "LR-004",
+      "study_id": "MRD-204-017",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "remittance",
+      "entity_id": "LR-010",
+      "study_id": "MRD-204-017",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "remittance",
+      "entity_id": "LR-007",
+      "study_id": "MRD-204-017",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "remittance",
+      "entity_id": "LR-006",
+      "study_id": "MRD-204-017",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "remittance",
+      "entity_id": "LR-009",
+      "study_id": "MRD-204-017",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "remittance",
+      "entity_id": "LR-008",
+      "study_id": "MRD-204-017",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "activity",
+      "entity_id": "RT-S-12-001-0",
+      "study_id": "MRD-204-017",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "activity",
+      "entity_id": "RT-S-12-002-1",
+      "study_id": "MRD-204-017",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "activity",
+      "entity_id": "RT-S-12-003-2",
+      "study_id": "MRD-204-017",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "activity",
+      "entity_id": "RT-S-12-003-3",
+      "study_id": "MRD-204-017",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "activity",
+      "entity_id": "RT-S-12-004-4",
+      "study_id": "MRD-204-017",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "activity",
+      "entity_id": "RT-S-12-005-5",
+      "study_id": "MRD-204-017",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "activity",
+      "entity_id": "RT-S-12-009-6",
+      "study_id": "MRD-204-017",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "activity",
+      "entity_id": "RT-S-12-010-7",
+      "study_id": "MRD-204-017",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "activity",
+      "entity_id": "RT-S-12-012-8",
+      "study_id": "MRD-204-017",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "activity",
+      "entity_id": "RT-S-12-013-9",
+      "study_id": "MRD-204-017",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "activity",
+      "entity_id": "RT-S-12-013-10",
+      "study_id": "MRD-204-017",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "activity",
+      "entity_id": "RT-S-12-013-11",
+      "study_id": "MRD-204-017",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "activity",
+      "entity_id": "RT-S-12-017-12",
+      "study_id": "MRD-204-017",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "activity",
+      "entity_id": "RT-S-12-018-13",
+      "study_id": "MRD-204-017",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "activity",
+      "entity_id": "RT-S-12-021-14",
+      "study_id": "MRD-204-017",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "activity",
+      "entity_id": "RT-S-12-037-15",
+      "study_id": "MRD-204-017",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "activity",
+      "entity_id": "RT-S-12-039-16",
+      "study_id": "MRD-204-017",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "activity",
+      "entity_id": "RT-S-12-040-17",
+      "study_id": "MRD-204-017",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "activity",
+      "entity_id": "RT-S-12-040-18",
+      "study_id": "MRD-204-017",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "activity",
+      "entity_id": "RT-S-12-041-19",
+      "study_id": "MRD-204-017",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "activity",
+      "entity_id": "RT-S-12-042-20",
+      "study_id": "MRD-204-017",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    },
+    {
+      "entity_type": "activity",
+      "entity_id": "RT-S-12-043-21",
+      "study_id": "MRD-204-017",
+      "site_id": "ARP-12",
+      "investigator": "Elena Park"
+    }
+  ]
 }

@@ -1,15 +1,20 @@
 {
   "type": "Invoice",
   "invoice_id": "INV-001",
+  "payer": "Calyx Pharma",
   "study_id": "CLX-115-300",
-  "site_id": "ARP-03",
-  "date": "2026-02-10",
+  "protocol": "NORTHSTAR",
+  "investigator": null,
+  "invoice_date": "2  026-02-10",
+  "service_date": "2026-02-04",
+  "subject_id": "S-03-001",
   "total_amount": 742.3,
   "line_items": [
     {
-      "description": "Screening Visit S-03-001",
+      "description": "Screening Visit",
       "amount": 742.3
     }
   ],
+  "net": 30,
   "_source_file": "INV-001_S-03-001_2026-02-04.pdf"
 }

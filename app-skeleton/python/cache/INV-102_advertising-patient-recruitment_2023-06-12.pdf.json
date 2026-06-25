@@ -1,10 +1,13 @@
 {
   "type": "Invoice",
   "invoice_id": "INV-102",
+  "payer": "Meridian Therapeutics, Inc.",
   "study_id": "MRD-204-017",
-  "site_id": "ARP-12",
+  "protocol": "HORIZON",
   "investigator": null,
-  "date": "2023-06-12",
+  "invoice_date": "2023-06-12",
+  "service_date": "2023-06-01",
+  "subject_id": null,
   "total_amount": 11642.8,
   "line_items": [
     {
@@ -12,5 +15,6 @@
       "amount": 11642.8
     }
   ],
+  "net": 30,
   "_source_file": "INV-102_advertising-patient-recruitment_2023-06-12.pdf"
 }

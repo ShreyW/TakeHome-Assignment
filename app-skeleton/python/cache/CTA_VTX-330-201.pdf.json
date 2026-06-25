@@ -1,48 +1,56 @@
 {
   "type": "CTA",
   "study_id": "VTX-330-201",
+  "protocol_name": "ASCEND",
+  "effective_date": "2025-11-01",
+  "net_days": 45,
   "site_id": "ARP-12",
-  "investigator": "VANTIX BIOSCIENCES",
+  "investigator": "Elena Park",
   "sponsor": "VANTIX BIOSCIENCES",
   "holdback_percent": 0.0,
   "overhead_percent": 0.0,
+  "autopayer_system": "eClinicalGPS",
   "budget": [
     {
       "visit_name": "Screening",
-      "procedures": [],
-      "amount": 685.4
+      "amount": 685.4,
+      "is_autopaid": true
     },
     {
-      "visit_name": "Vi",
-      "procedures": [],
-      "amount": 418.75
+      "visit_name": "V1",
+      "amount": 418.75,
+      "is_autopaid": true
     },
     {
       "visit_name": "V2",
-      "procedures": [],
-      "amount": 842.6
+      "amount": 842.6,
+      "is_autopaid": true
     },
     {
       "visit_name": "V3",
-      "procedures": [],
-      "amount": 523.1
+      "amount": 523.1,
+      "is_autopaid": true
     },
     {
-      "visit_name": "v4",
-      "procedures": [],
-      "amount": 471.5
+      "visit_name": "V4",
+      "amount": 471.5,
+      "is_autopaid": true
     }
   ],
   "site_fees": [
     {
       "name": "Site Initiation / Start-up",
       "amount": 8000.0,
-      "cap": null
+      "cap": null,
+      "cadence": "one-time",
+      "is_autopaid": false
     },
     {
       "name": "IRB / Regulatory Submission",
       "amount": 3500.0,
-      "cap": null
+      "cap": null,
+      "cadence": "one-time",
+      "is_autopaid": false
     }
   ],
   "_source_file": "CTA_VTX-330-201.pdf"

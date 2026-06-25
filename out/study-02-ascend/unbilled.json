@@ -1,1 +1,26 @@
-[]
+[
+  {
+    "subject_id": "S-33-003",
+    "evidence": "CRIO CTMS log shows Unsch Repeat Hematology completed, no invoice",
+    "proposed_visit_label": "Unsch Repeat Hematology",
+    "estimated_amount": 0.0,
+    "cta_basis": "unknown",
+    "confidence": "LOW"
+  },
+  {
+    "subject_id": "S-33-001",
+    "evidence": "CRIO CTMS log shows UNSCH Repeat Hematology  completed, no invoice",
+    "proposed_visit_label": "UNSCH Repeat Hematology ",
+    "estimated_amount": 0.0,
+    "cta_basis": "unknown",
+    "confidence": "LOW"
+  },
+  {
+    "subject_id": "S-33-002",
+    "evidence": "CRIO CTMS log shows [Ad Hoc] Unscheduled Visit completed, no invoice",
+    "proposed_visit_label": "[Ad Hoc] Unscheduled Visit",
+    "estimated_amount": 0.0,
+    "cta_basis": "unknown",
+    "confidence": "LOW"
+  }
+]

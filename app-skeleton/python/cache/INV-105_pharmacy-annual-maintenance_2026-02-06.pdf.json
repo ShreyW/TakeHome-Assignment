@@ -1,19 +1,20 @@
 {
   "type": "Invoice",
   "invoice_id": "INV-105",
+  "payer": "Meridian Therapeutics, Inc.",
   "study_id": "MRD-204-017",
-  "site_id": "ARP-12",
+  "protocol": "HORIZON",
   "investigator": null,
-  "date": "2026-02-06",
+  "invoice_date": "2026-02-06",
+  "service_date": "2023-01-01",
+  "subject_id": null,
   "total_amount": 13061.6,
   "line_items": [
     {
-      "description": "Pharmacy Annual Maintenance 2023-2026",
+      "description": "Pharmacy Annual Maintenance 2023-2026 (4 x $3,265.40)",
       "amount": 13061.6
     }
   ],
-  "bill_to": "Cordis Clinical",
-  "remit_to": "Atlas Research Partners",
-  "terms": "Net 30",
+  "net": 30,
   "_source_file": "INV-105_pharmacy-annual-maintenance_2026-02-06.pdf"
 }

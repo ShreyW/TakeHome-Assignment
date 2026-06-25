@@ -1,6 +1,10 @@
 {
   "type": "ClinCard",
+  "study_id": "MRD-204-017",
+  "protocol_name": "HORIZON",
+  "site_id": "ARP-12",
   "subject_id": "S-12-043",
+  "visit_name": "Screening Visit",
   "date": "2023-02-09",
   "amount": 61.75,
   "description": "participant travel + time",

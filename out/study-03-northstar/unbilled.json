@@ -1,10 +1,10 @@
 [
   {
     "subject_id": "S-03-002",
-    "evidence": "Clinical Conductor shows Visit 2 never invoiced",
+    "evidence": "Clinical Conductor log shows Visit 2 completed, no invoice",
     "proposed_visit_label": "Visit 2",
-    "estimated_amount": 1000.0,
-    "cta_basis": "Visit 2 base",
+    "estimated_amount": 463.75,
+    "cta_basis": "Procedure-level + 0% overhead",
     "confidence": "HIGH"
   }
 ]

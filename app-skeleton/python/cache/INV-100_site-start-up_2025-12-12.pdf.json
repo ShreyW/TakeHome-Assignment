@@ -1,10 +1,13 @@
 {
   "type": "Invoice",
   "invoice_id": "INV-100",
+  "payer": "Calyx Pharma",
   "study_id": "CLX-115-300",
-  "site_id": "ARP-03",
+  "protocol": "NORTHSTAR",
   "investigator": null,
-  "date": "2025-12-12",
+  "invoice_date": "2025-12-12",
+  "service_date": "2025-12-10",
+  "subject_id": null,
   "total_amount": 6284.5,
   "line_items": [
     {
@@ -12,5 +15,6 @@
       "amount": 6284.5
     }
   ],
+  "net": 30,
   "_source_file": "INV-100_site-start-up_2025-12-12.pdf"
 }

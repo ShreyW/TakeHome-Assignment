@@ -1,8 +1,12 @@
 {
   "type": "ClinCard",
+  "study_id": "MRD-204-017",
+  "protocol_name": "HORIZON",
+  "site_id": "ARP-12",
   "subject_id": "S-12-042",
+  "visit_name": "Screening Visit",
   "date": "2023-02-08",
   "amount": 61.75,
-  "description": "participant travel + time for HORIZON (MRD-204-017) study at Atlas Research Partners (ARP-12) during Screening Visit",
+  "description": "participant travel + time",
   "_source_file": "ClinCard_S-12-042_2023-02-08.pdf"
 }

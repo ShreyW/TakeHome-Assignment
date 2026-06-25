@@ -1,18 +1,20 @@
 {
   "type": "Invoice",
   "invoice_id": "INV-003",
+  "payer": "Calyx Pharma",
   "study_id": "CLX-115-300",
-  "site_id": "ARP-03",
+  "protocol": "NORTHSTAR",
   "investigator": null,
-  "date": "2026-02-24",
+  "invoice_date": "2026-02-24",
+  "service_date": "2026-02-18",
+  "subject_id": "S-03-002",
   "total_amount": 742.3,
   "line_items": [
     {
-      "description": "Screening Visit for Subject S-03-002",
+      "description": "Screening Visit",
       "amount": 742.3
     }
   ],
-  "payer": "Calyx Pharma",
-  "provider": "Atlas Research Partners",
+  "net": 30,
   "_source_file": "INV-003_S-03-002_2026-02-18.pdf"
 }

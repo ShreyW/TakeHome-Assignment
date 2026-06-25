@@ -1,10 +1,13 @@
 {
   "type": "Invoice",
   "invoice_id": "INV-002",
-  "study_id": "NORTHSTAR (CLX-115-300)",
-  "site_id": "ARP-03",
+  "payer": "Calyx Pharma",
+  "study_id": "CLX-115-300",
+  "protocol": "NORTHSTAR",
   "investigator": null,
-  "date": "2026-03-10",
+  "invoice_date": "2026-03-10",
+  "service_date": "2026-03-04",
+  "subject_id": "S-03-001",
   "total_amount": 518.6,
   "line_items": [
     {
@@ -12,5 +15,6 @@
       "amount": 518.6
     }
   ],
+  "net": 30,
   "_source_file": "INV-002_S-03-001_2026-03-04.pdf"
 }

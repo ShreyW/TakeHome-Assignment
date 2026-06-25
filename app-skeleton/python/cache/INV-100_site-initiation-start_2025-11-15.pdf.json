@@ -1,10 +1,13 @@
 {
   "type": "Invoice",
   "invoice_id": "INV-100",
+  "payer": "Vantix Biosciences",
   "study_id": "VTX-330-201",
-  "site_id": null,
+  "protocol": "ASCEND",
   "investigator": null,
-  "date": "2025-11-15",
+  "invoice_date": "2025-11-15",
+  "service_date": "2025-11-15",
+  "subject_id": null,
   "total_amount": 10842.5,
   "line_items": [
     {
@@ -12,5 +15,6 @@
       "amount": 10842.5
     }
   ],
+  "net": 45,
   "_source_file": "INV-100_site-initiation-start_2025-11-15.pdf"
 }

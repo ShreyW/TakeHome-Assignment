@@ -2,11 +2,11 @@
   "study_id": "MRD-204-017",
   "site_id": "ARP-12",
   "investigator": "Elena Park",
-  "total_billed": 98428.29000000001,
-  "total_collected": 119873.16000000002,
+  "total_billed": 98428.29,
+  "total_collected": 82037.87000000001,
   "outstanding_ar": 13061.6,
-  "holdback_withheld": 448.8700000000001,
-  "unbilled_estimate": 3814.38,
+  "holdback_withheld": 3328.749999999999,
+  "unbilled_estimate": 14292.5,
   "exceptions_count": 0,
-  "avg_days_to_payment": 0
+  "avg_days_to_payment": 115.3
 }

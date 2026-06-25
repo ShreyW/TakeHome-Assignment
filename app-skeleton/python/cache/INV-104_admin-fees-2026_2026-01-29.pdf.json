@@ -1,10 +1,13 @@
 {
   "type": "Invoice",
   "invoice_id": "INV-104",
+  "payer": "Meridian Therapeutics, Inc.",
   "study_id": "MRD-204-017",
-  "site_id": "ARP-12",
+  "protocol": "HORIZON",
   "investigator": null,
-  "date": "2026-01-29",
+  "invoice_date": "2026-01-29",
+  "service_date": "2026-01-01",
+  "subject_id": null,
   "total_amount": 1284.6,
   "line_items": [
     {
@@ -12,5 +15,6 @@
       "amount": 1284.6
     }
   ],
+  "net": 30,
   "_source_file": "INV-104_admin-fees-2026_2026-01-29.pdf"
 }

@@ -1,10 +1,13 @@
 {
   "type": "Invoice",
   "invoice_id": "INV-021",
+  "payer": "Meridian Therapeutics, Inc.",
   "study_id": "VTX-330-201",
-  "site_id": "ARP-12",
+  "protocol": "ASCEND",
   "investigator": null,
-  "date": "2022-09-12",
+  "invoice_date": "2022-09-12",
+  "service_date": "2022-08-30",
+  "subject_id": "S-12-021",
   "total_amount": 2335.63,
   "line_items": [
     {
@@ -16,5 +19,6 @@
       "amount": 467.13
     }
   ],
+  "net": 30,
   "_source_file": "INV-021_S-12-021_2022-08-30.pdf"
 }

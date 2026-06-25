@@ -1,73 +1,94 @@
 {
   "type": "CTA",
   "study_id": "MRD-204-017",
+  "protocol_name": "HORIZON",
+  "effective_date": "2021-12-03",
+  "net_days": 30,
   "site_id": "ARP-12",
   "investigator": "Elena Park",
   "sponsor": "Meridian Therapeutics, Inc.",
   "holdback_percent": 10.0,
   "overhead_percent": 25.0,
+  "autopayer_system": null,
   "budget": [
     {
       "visit_name": "Screening+TVU",
-      "procedures": [],
-      "amount": 2387.0
+      "amount": 2387.0,
+      "is_autopaid": false
     },
     {
       "visit_name": "Screening",
-      "procedures": [],
-      "amount": 1722.5
+      "amount": 1722.5,
+      "is_autopaid": false
     },
     {
       "visit_name": "DXA",
-      "procedures": [],
-      "amount": 1099.0
+      "amount": 1099.0,
+      "is_autopaid": false
     },
     {
       "visit_name": "TVU",
-      "procedures": [],
-      "amount": 664.5
+      "amount": 664.5,
+      "is_autopaid": false
     },
     {
       "visit_name": "Imaging",
-      "procedures": [],
-      "amount": 1868.5
+      "amount": 1868.5,
+      "is_autopaid": false
     },
     {
       "visit_name": "UnschLab",
-      "procedures": [],
-      "amount": 371.0
+      "amount": 371.0,
+      "is_autopaid": false
     },
     {
       "visit_name": "UnschVisit",
-      "procedures": [],
-      "amount": 605.0
+      "amount": 605.0,
+      "is_autopaid": false
     }
   ],
   "site_fees": [
     {
       "name": "Site Start-up",
-      "amount": 2983.75,
-      "cap": null
+      "amount": 14317.5,
+      "cap": null,
+      "cadence": "one-time",
+      "is_autopaid": false
     },
     {
       "name": "Administrative Fee",
-      "amount": 2153.13,
-      "cap": null
+      "amount": 1284.6,
+      "cap": null,
+      "cadence": "annual",
+      "is_autopaid": false
     },
     {
       "name": "Pharmacy Annual Maintenance",
-      "amount": 1373.75,
-      "cap": null
+      "amount": 3265.4,
+      "cap": null,
+      "cadence": "annual",
+      "is_autopaid": false
     },
     {
       "name": "Advertising / Patient Recruitment",
-      "amount": 830.63,
-      "cap": null
+      "amount": 11642.8,
+      "cap": null,
+      "cadence": "as incurred",
+      "is_autopaid": false
     },
     {
       "name": "Pre-screen Chart Review",
-      "amount": 2335.63,
-      "cap": 3000.0
+      "amount": 52.85,
+      "cap": 3000.0,
+      "cadence": "per subject",
+      "is_autopaid": false
+    },
+    {
+      "name": "eDiary Completion",
+      "amount": 83.6,
+      "cap": null,
+      "cadence": "per cycle",
+      "is_autopaid": false
     }
   ],
   "_source_file": "CTA_MRD-204-017.pdf"

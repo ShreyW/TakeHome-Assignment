@@ -1,14 +1,17 @@
 {
   "type": "Invoice",
   "invoice_id": "INV-002",
+  "payer": "Meridian Therapeutics, Inc.",
   "study_id": "MRD-204-017",
-  "site_id": "ARP-12",
-  "investigator": "",
-  "date": "2022-05-16",
+  "protocol": "HORIZON",
+  "investigator": null,
+  "invoice_date": "2022-05-16",
+  "service_date": "2022-05-11",
+  "subject_id": "S-12-002",
   "total_amount": 2153.13,
   "line_items": [
     {
-      "description": "Screening Visit — procedures",
+      "description": "Screening Visit - procedures",
       "amount": 1722.5
     },
     {
@@ -16,5 +19,6 @@
       "amount": 430.63
     }
   ],
+  "net": 30,
   "_source_file": "INV-002_S-12-002_2022-05-11.pdf"
 }

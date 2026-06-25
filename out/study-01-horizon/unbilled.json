@@ -1,9 +1,57 @@
 [
   {
     "subject_id": "S-12-037",
-    "evidence": "RealTime CTMS visit log shows visit completed, no invoice",
+    "evidence": "RealTime CTMS log shows Screening Visit (incl. Ultrasound) completed, no invoice",
     "proposed_visit_label": "Screening Visit (incl. Ultrasound)",
-    "estimated_amount": 3814.38,
+    "estimated_amount": 2153.125,
+    "cta_basis": "Procedure-level + 25% overhead",
+    "confidence": "HIGH"
+  },
+  {
+    "subject_id": "S-12-039",
+    "evidence": "RealTime CTMS log shows Screening Visit (incl. Ultrasound) completed, no invoice",
+    "proposed_visit_label": "Screening Visit (incl. Ultrasound)",
+    "estimated_amount": 2153.125,
+    "cta_basis": "Procedure-level + 25% overhead",
+    "confidence": "HIGH"
+  },
+  {
+    "subject_id": "S-12-040",
+    "evidence": "RealTime CTMS log shows Screening Visit (incl. Ultrasound) completed, no invoice",
+    "proposed_visit_label": "Screening Visit (incl. Ultrasound)",
+    "estimated_amount": 2153.125,
+    "cta_basis": "Procedure-level + 25% overhead",
+    "confidence": "HIGH"
+  },
+  {
+    "subject_id": "S-12-040",
+    "evidence": "RealTime CTMS log shows DXA Scan completed, no invoice",
+    "proposed_visit_label": "DXA Scan",
+    "estimated_amount": 1373.75,
+    "cta_basis": "Procedure-level + 25% overhead",
+    "confidence": "HIGH"
+  },
+  {
+    "subject_id": "S-12-041",
+    "evidence": "RealTime CTMS log shows Screening Visit (incl. Ultrasound) completed, no invoice",
+    "proposed_visit_label": "Screening Visit (incl. Ultrasound)",
+    "estimated_amount": 2153.125,
+    "cta_basis": "Procedure-level + 25% overhead",
+    "confidence": "HIGH"
+  },
+  {
+    "subject_id": "S-12-042",
+    "evidence": "RealTime CTMS log shows Screening Visit completed, no invoice",
+    "proposed_visit_label": "Screening Visit",
+    "estimated_amount": 2153.125,
+    "cta_basis": "Procedure-level + 25% overhead",
+    "confidence": "HIGH"
+  },
+  {
+    "subject_id": "S-12-043",
+    "evidence": "RealTime CTMS log shows Screening Visit completed, no invoice",
+    "proposed_visit_label": "Screening Visit",
+    "estimated_amount": 2153.125,
     "cta_basis": "Procedure-level + 25% overhead",
     "confidence": "HIGH"
   }

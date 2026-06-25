@@ -1,12 +1,12 @@
 {
   "study_id": "VTX-330-201",
   "site_id": "ARP-12",
-  "investigator": "Unknown",
+  "investigator": "Elena Park",
   "total_billed": 21093.4,
   "total_collected": 20779.1,
-  "outstanding_ar": 0,
-  "holdback_withheld": 0,
-  "unbilled_estimate": 0,
-  "exceptions_count": 1,
-  "avg_days_to_payment": 0
+  "outstanding_ar": 0.0,
+  "holdback_withheld": 0.0,
+  "unbilled_estimate": 0.0,
+  "exceptions_count": 2,
+  "avg_days_to_payment": 45.0
 }

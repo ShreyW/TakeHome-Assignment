@@ -1,8 +1,12 @@
 {
   "type": "ClinCard",
+  "study_id": "MRD-204-017",
+  "protocol_name": "HORIZON",
+  "site_id": "ARP-12",
   "subject_id": "S-12-040",
+  "visit_name": "DXA Scan",
   "date": "2023-02-20",
   "amount": 43.4,
-  "description": "participant travel + time for DXA Scan",
+  "description": "participant travel + time",
   "_source_file": "ClinCard_S-12-040_2023-02-20.pdf"
 }

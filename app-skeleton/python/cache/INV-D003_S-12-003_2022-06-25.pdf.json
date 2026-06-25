@@ -1,10 +1,13 @@
 {
   "type": "Invoice",
   "invoice_id": "INV-D003",
-  "study_id": "HORIZON (MRD-204-017)",
-  "site_id": "ARP-12",
-  "investigator": "",
-  "date": "2022-10-19",
+  "payer": "Meridian Therapeutics, Inc.",
+  "study_id": "MRD-204-017",
+  "protocol": "HORIZON",
+  "investigator": null,
+  "invoice_date": "2022-10-19",
+  "service_date": "2022-06-25",
+  "subject_id": "S-12-003",
   "total_amount": 1373.75,
   "line_items": [
     {
@@ -16,10 +19,6 @@
       "amount": 274.75
     }
   ],
-  "bill_to": "Cordis Clinical",
-  "for": "Subject S-12-003",
-  "service_date": "2022-06-25",
-  "remit_to": "Atlas Research Partners",
-  "terms": "Net 30",
+  "net": 30,
   "_source_file": "INV-D003_S-12-003_2022-06-25.pdf"
 }

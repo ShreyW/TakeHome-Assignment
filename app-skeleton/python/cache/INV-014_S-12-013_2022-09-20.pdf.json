@@ -1,14 +1,17 @@
 {
   "type": "Invoice",
   "invoice_id": "INV-014",
+  "payer": "Meridian Therapeutics, Inc.",
   "study_id": "MRD-204-017",
-  "site_id": "ARP-12",
+  "protocol": "HORIZON",
   "investigator": null,
-  "date": "2022-11-14",
+  "invoice_date": "2022-11-14",
+  "service_date": "2022-09-20",
+  "subject_id": "S-12-013",
   "total_amount": 463.75,
   "line_items": [
     {
-      "description": "Unscheduled Lab Draw — procedures",
+      "description": "Unscheduled Lab Draw - procedures",
       "amount": 371.0
     },
     {
@@ -16,5 +19,6 @@
       "amount": 92.75
     }
   ],
+  "net": 30,
   "_source_file": "INV-014_S-12-013_2022-09-20.pdf"
 }
