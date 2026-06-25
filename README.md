@@ -65,4 +65,4 @@ The overall code flow in main is as follows:
 
 
 ## Time Spent
-Total time spent on this assignment: (4 hours Day 1, 5 hours Day 2, 6 hours Day 3))
+Total time spent on this assignment: (4 hours Day 1, 5 hours Day 2, 6 hours Day 3)

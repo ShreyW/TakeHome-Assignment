@@ -147,8 +147,4 @@ def match_deposits(deposits: list[Deposit], study_meta: dict,
             remittance_id=matched_rem.remittance_id if matched_rem else None,
             remittance_lines=matched_rem.lines if matched_rem else []
         )
-    print(len(result))
-    # PRINT RESULTS CLEANLY
-    for k, v in result.items():
-        print(f"txn_id={k} | {v}")
     return result

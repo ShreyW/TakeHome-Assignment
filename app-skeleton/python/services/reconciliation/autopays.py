@@ -44,7 +44,7 @@ def match_autopays(reg_eclin: list[dict], deposit_map: dict[str, MatchedDeposit]
             if ap_study_key:
                 break
         if not ap_study_key or ap_study_key not in results:
-            print("Could not find study id for autopay: ", ap)
+            # print("Could not find study id for autopay: ", ap)
             continue
 
         results[ap_study_key].billed_total_cents += amt_cents
