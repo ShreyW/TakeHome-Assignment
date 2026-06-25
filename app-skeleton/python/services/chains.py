@@ -1,12 +1,8 @@
 from datetime import datetime
-
+from domain.models import Invoice, Remittance, VisitLog
 def compute_avg_days_to_payment(day_pairs: list[tuple[str, str]]) -> float:
     """
     Compute mean(payment_date - invoice_date) over settled invoices.
-
-    Args:
-        day_pairs: list of (invoice_date, payment_date) strings in YYYY-MM-DD format.
-
     Returns:
         Average days as a float, or 0 if no pairs.
     """
@@ -27,54 +23,25 @@ def compute_avg_days_to_payment(day_pairs: list[tuple[str, str]]) -> float:
     return round(total_days / count, 1) if count > 0 else 0
 
 
-def get_all_activities(ctms_rt: list[dict], ctms_cc: list[dict], ctms_crio: list[dict], study_key: str, study_meta: dict) -> dict:
+
+def get_all_activities(visit_logs: list[VisitLog], study_key: str, study_meta: dict) -> dict:
     """
     Build a combined activity index for a given study:
     """
-    meta = study_meta[study_key]
     activity_index = {}
     
-    ctms_mapping = {
-        "study-01-horizon": {"name": "RealTime CTMS", "log": ctms_rt},
-        "study-02-ascend": {"name": "CRIO", "log": ctms_crio},
-        "study-03-northstar": {"name": "Clinical Conductor", "log": ctms_cc},
-    }
-    
-    mapping = ctms_mapping.get(study_key)
-    if not mapping:
-        return activity_index
-        
-    ctms_name = mapping["name"]
-    ctms_log = mapping["log"]
-
-    if ctms_name == "RealTime CTMS":
-        for i, rt in enumerate(ctms_log):
-            subj = rt.get("SubjectID", "")
-            a_id = f"RT-{subj}-{i}"
-            visit = rt.get("VisitName", "").lower()
-            date = rt.get("VisitDate", "")
-            activity_index.setdefault(subj, []).append((a_id, visit, date))
-
-    elif ctms_name == "Clinical Conductor":
-        for i, cc in enumerate(ctms_log):
-            subj = cc.get("Subject", "")
-            a_id = f"CC-{subj}-{i}"
-            visit = cc.get("ProtocolVisit", "").lower()
-            date = cc.get("VisitDate", "")
-            activity_index.setdefault(subj, []).append((a_id, visit, date))
-
-    elif ctms_name == "CRIO":
-        for crio in ctms_log:
-            subj = crio.get("patient_id", "")
-            a_id = crio.get("activity_ref", f"CRIO-{subj}")
-            visit = crio.get("visit_name", "").lower()
-            date = crio.get("service_date", "")
-            activity_index.setdefault(subj, []).append((a_id, visit, date))
+    for visit in visit_logs:
+        if visit.study_key == study_key:
+            subj = visit.subject_id
+            a_id = visit.activity_id
+            v_name = visit.visit_name.lower()
+            date = visit.date
+            activity_index.setdefault(subj, []).append((a_id, v_name, date))
 
     return activity_index
 
 
-def build_invoice_to_activities(invoices: list[dict], activity_index: dict) -> list[dict]:
+def build_invoice_to_activities(invoices: list[Invoice], activity_index: dict) -> list[dict]:
     """
     Link invoices to CTMS activity records by matching subject + visit + date.
     Returns a list of {invoice_id, activity_ids} entries.
@@ -83,19 +50,19 @@ def build_invoice_to_activities(invoices: list[dict], activity_index: dict) -> l
 
     # Now match invoices to activities
     for inv in invoices:
-        inv_subj = inv.get("subject_id", "")
+        inv_subj = inv.subject_id
         if not inv_subj or inv_subj not in activity_index:
             continue
-        inv_id = inv.get("invoice_id", "")
-        inv_date = inv.get("service_date", "")
+        inv_id = inv.invoice_id
+        inv_date = inv.service_date
 
         matched_ids = []
         for a_id, visit, a_date in activity_index[inv_subj]:
             # Match by date proximity or visit name overlap
             date_match = (inv_date == a_date) if inv_date and a_date else False
             visit_match = False
-            for item in inv.get("line_items", []):
-                desc = item.get("description", "").lower()
+            for item in inv.line_items:
+                desc = item.description.lower()
                 if visit and visit in desc:
                     visit_match = True
                     break
@@ -112,7 +79,7 @@ def build_invoice_to_activities(invoices: list[dict], activity_index: dict) -> l
     return result
 
 
-def build_remittance_to_activities(remittances: list[dict], invoice_to_activities: list[dict], study_key: str,study_meta: dict) -> list[dict]:
+def build_remittance_to_activities(remittances: list[Remittance], invoice_to_activities: list[dict], study_key: str,study_meta: dict) -> list[dict]:
     """
     Link remittance line items to activities via invoice mapping.
     Returns a list of {remittance_id, lines: [{activity_id, invoice_id, amount_allocated}]}.
@@ -124,11 +91,11 @@ def build_remittance_to_activities(remittances: list[dict], invoice_to_activitie
 
     result = []
     for rem in remittances:
-        rem_id = rem.get("remittance_id", "")
+        rem_id = rem.remittance_id
         lines_out = []
-        for line in rem.get("lines", []):
-            inv_id = line.get("invoice_id", "")
-            amount = float(line.get("amount_paid", 0))
+        for line in rem.lines:
+            inv_id = line.invoice_id
+            amount = line.amount_paid_cents / 100.0  # Output float for reporting
             activity_ids = inv_to_acts.get(inv_id, [])
             if activity_ids:
                 for a_id in activity_ids:
@@ -153,20 +120,20 @@ def build_remittance_to_activities(remittances: list[dict], invoice_to_activitie
     return result
 
 
-def build_activity_to_cta(activity_index: dict, invoice_to_activities: list[dict],invoices: list[dict],study_key: str,study_meta: dict) -> list[dict]:
+def build_activity_to_cta(activity_index: dict, invoice_to_activities: list[dict],invoices: list[Invoice],study_key: str,study_meta: dict) -> list[dict]:
     """
     Map activities to CTA budget lines.
     Returns a list of {activity_id, cta_visit_label, cta_amount, match_confidence}.
     """
     meta = study_meta[study_key]
-    budget = meta.get("budget", [])
-    site_fees = meta.get("site_fees", [])
-    overhead_pct = meta.get("overhead", 0)
+    budget = meta.budget
+    site_fees = meta.site_fees
+    overhead_pct = meta.overhead
     result = []
 
     # Build activity_id -> invoice lookup
     act_to_inv = {}
-    inv_lookup = {inv.get("invoice_id", ""): inv for inv in invoices if inv.get("invoice_id")}
+    inv_lookup = {inv.invoice_id: inv for inv in invoices if inv.invoice_id}
     for entry in invoice_to_activities:
         inv = inv_lookup.get(entry["invoice_id"])
         if inv:
@@ -183,19 +150,19 @@ def build_activity_to_cta(activity_index: dict, invoice_to_activities: list[dict
 
             if inv:
                 # Try to match invoice line items to CTA budget
-                for item in inv.get("line_items", []):
-                    desc = item.get("description", "").lower()
+                for item in inv.line_items:
+                    desc = item.description.lower()
                     if "overhead" in desc:
                         continue
                     for b in budget:
-                        b_name = b.get("visit_name", "").lower()
-                        base = float(b.get("amount", 0))
-                        item_amt = float(item.get("amount", 0))
+                        b_name = b.visit_name.lower()
+                        base = (b.amount_cents / 100.0)
+                        item_amt = item.amount_cents / 100.0
                         
                         # Match by vocabulary OR exact base amount match
                         if b_name in desc or desc in b_name or abs(base - item_amt) < 0.01:
                             billed = base * (1 + overhead_pct / 100.0)
-                            best_label = b.get("visit_name")
+                            best_label = b.visit_name
                             best_amount = round(billed, 2)
                             
                             if b_name in desc or desc in b_name:
@@ -208,13 +175,13 @@ def build_activity_to_cta(activity_index: dict, invoice_to_activities: list[dict
 
                 # Try site fees if no budget match
                 if not best_label:
-                    for item in inv.get("line_items", []):
-                        desc = item.get("description", "").lower()
+                    for item in inv.line_items:
+                        desc = item.description.lower()
                         for sf in site_fees:
-                            sf_name = sf.get("name", "").lower()
+                            sf_name = sf.name.lower()
                             if sf_name and sf_name in desc:
-                                best_label = sf.get("name")
-                                best_amount = float(sf.get("amount", 0))
+                                best_label = sf.name
+                                best_amount = (sf.amount_cents / 100.0)
                                 best_confidence = "HIGH"
                                 break
                         if best_label:
@@ -224,14 +191,14 @@ def build_activity_to_cta(activity_index: dict, invoice_to_activities: list[dict
                 v_lower = visit.lower()
                 note_str = None
                 for b in budget:
-                    b_name = b.get("visit_name", "").lower()
+                    b_name = b.visit_name.lower()
                     if b_name in v_lower or v_lower in b_name:
-                        base = float(b.get("amount", 0))
+                        base = (b.amount_cents / 100.0)
                         billed = base * (1 + overhead_pct / 100.0)
-                        best_label = b.get("visit_name")
+                        best_label = b.visit_name
                         best_amount = round(billed, 2)
                         best_confidence = "MEDIUM"
-                        if b.get("is_autopaid", False):
+                        if b.is_autopaid:
                             note_str = "autopaid"
                         else:
                             note_str = "unbilled"
@@ -255,9 +222,9 @@ def build_entity_scope(study_key: str, study_meta: dict,invoice_to_payment: list
     Build the entity_scope array that maps every entity to its study/site/investigator
     """
     meta = study_meta[study_key]
-    study_id = meta["study_id"]
-    site_id = meta["site_id"]
-    investigator = meta["investigator"]
+    study_id = meta.study_id
+    site_id = meta.site_id
+    investigator = meta.investigator
     seen = set()
     result = []
 

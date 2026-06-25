@@ -20,7 +20,7 @@
     {
       "payment_id": "PL-001",
       "remittance_ids": [],
-      "notes": null
+      "notes": "likely autopaid"
     },
     {
       "payment_id": "PL-N2",
@@ -30,47 +30,47 @@
     {
       "payment_id": "PL-004",
       "remittance_ids": [],
-      "notes": null
+      "notes": "likely autopaid"
     },
     {
       "payment_id": "PL-006",
       "remittance_ids": [],
-      "notes": null
+      "notes": "likely autopaid"
     },
     {
       "payment_id": "PL-010",
       "remittance_ids": [],
-      "notes": null
+      "notes": "likely autopaid"
     },
     {
       "payment_id": "PL-002",
       "remittance_ids": [],
-      "notes": null
+      "notes": "likely autopaid"
     },
     {
       "payment_id": "PL-012",
       "remittance_ids": [],
-      "notes": null
+      "notes": "likely autopaid"
     },
     {
       "payment_id": "PL-005",
       "remittance_ids": [],
-      "notes": null
+      "notes": "likely autopaid"
     },
     {
       "payment_id": "PL-007",
       "remittance_ids": [],
-      "notes": null
+      "notes": "likely autopaid"
     },
     {
       "payment_id": "PL-003",
       "remittance_ids": [],
-      "notes": null
+      "notes": "likely autopaid"
     },
     {
       "payment_id": "PL-008",
       "remittance_ids": [],
-      "notes": null
+      "notes": "likely autopaid"
     }
   ],
   "invoice_to_payment": [

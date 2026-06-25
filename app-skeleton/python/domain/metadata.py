@@ -6,6 +6,7 @@ sponsor keywords, budget lines, holdback/overhead rates, and autopayer info.
 """
 import re
 import json
+from domain.models import StudyMeta, BudgetLine, SiteFee
 
 def build_sponsor_keywords(sponsor_name: str) -> list[str]:
     """
@@ -40,7 +41,7 @@ def build_study_meta(items: list[dict]) -> tuple[dict, list[str]]:
         items: list of all parsed document JSON objects
     Returns:
         (study_meta, study_key_order) where study_meta maps
-        study keys like 'study-01-horizon' to metadata dicts.
+        study keys like 'study-01-horizon' to StudyMeta objects.
     """
     ctas = [i for i in items if i.get("type", "").upper() == "CTA"]
     ctas.sort(key=_cta_sort_key)
@@ -55,21 +56,22 @@ def build_study_meta(items: list[dict]) -> tuple[dict, list[str]]:
         sponsor = cta.get("sponsor", "")
         keywords = build_sponsor_keywords(sponsor)
 
-        study_meta[s_key] = {
-            "study_id": st_id,
-            "site_id": cta.get("site_id", None),
-            "investigator": cta.get("investigator", None),
-            "sponsor": sponsor,
-            "keywords": keywords,
-            "holdback": float(cta.get("holdback_percent", 0.0)) / 100.0,
-            # TODO: Change Overhead to percetange as well
-            "overhead": float(cta.get("overhead_percent", 0.0)),
-            "budget": cta.get("budget", []),
-            "site_fees": cta.get("site_fees", []),
-            "effective_date": cta.get("effective_date", ""),
-            "autopayer_system": cta.get("autopayer_system"),
-            "net_days": cta.get("net_days", 0),
-        }
+        budget = [BudgetLine.from_dict(b) for b in cta.get("budget", [])]
+        site_fees = [SiteFee.from_dict(sf) for sf in cta.get("site_fees", [])]
+
+        study_meta[s_key] = StudyMeta(
+            study_id=st_id,
+            site_id=cta.get("site_id", None),
+            investigator=cta.get("investigator", None),
+            sponsor=sponsor,
+            keywords=keywords,
+            holdback=float(cta.get("holdback_percent", 0.0)) / 100.0,
+            overhead=float(cta.get("overhead_percent", 0.0)),
+            budget=budget,
+            site_fees=site_fees,
+            effective_date=cta.get("effective_date", ""),
+            autopayer_system=cta.get("autopayer_system"),
+            net_days=cta.get("net_days", 0)
+        )
         study_key_order.append(s_key)
-    # print(json.dumps(study_meta, indent=4))
     return study_meta, study_key_order

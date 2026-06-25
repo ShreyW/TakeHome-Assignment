@@ -3,9 +3,9 @@
   "site_id": "ARP-12",
   "investigator": "Elena Park",
   "total_billed": 98428.29,
-  "total_collected": 82037.87000000001,
+  "total_collected": 82037.87,
   "outstanding_ar": 13061.6,
-  "holdback_withheld": 3328.749999999999,
+  "holdback_withheld": 3328.75,
   "unbilled_estimate": 14292.5,
   "exceptions_count": 0,
   "avg_days_to_payment": 115.3
